@@ -9,7 +9,7 @@
       href="assets/images/favicon.svg"
       type="image/x-icon"
     />
-    <title>Invoice | PlainAdmin Demo</title>
+    <title>Material Design Icons | PlainAdmin Demo</title>
 
     <!-- ========== All CSS files linkup ========= -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
@@ -77,7 +77,7 @@
             </ul>
           </li>
 
-          <li class="nav-item active">
+          <li class="nav-item">
             <a href="invoice.html">
               <span class="icon"><i class="lni lni-credit-cards"></i></span>
               <span class="text">Invoice</span>
@@ -150,8 +150,8 @@
           </li>
           <li class="nav-item nav-item-has-children">
             <a
-              href="#0"
-              class="collapsed"
+              href="icons.html"
+              class=""
               data-bs-toggle="collapse"
               data-bs-target="#ddmenu_55"
               aria-controls="ddmenu_55"
@@ -161,14 +161,14 @@
               <span class="icon"><i class="lni lni-package"></i></span>
               <span class="text">Icons</span>
             </a>
-            <ul id="ddmenu_55" class="collapse dropdown-nav">
+            <ul id="ddmenu_55" class="collapse show dropdown-nav">
               <li>
                 <a href="icons.html">
                   <i class="lni lni-arrow-right"></i> LineIcons
                 </a>
               </li>
               <li>
-                <a href="mdi-icons.html">
+                <a href="mdi-icons.html" class="active">
                   <i class="lni lni-arrow-right"></i> MDI Icons
                 </a>
               </li>
@@ -419,17 +419,14 @@
       <!-- ========== header end ========== -->
 
       <!-- ========== section start ========== -->
-      <section>
+      <section class="section">
         <div class="container-fluid">
           <!-- ========== title-wrapper start ========== -->
           <div class="title-wrapper pt-30">
             <div class="row align-items-center">
               <div class="col-md-6">
-                <div class="title d-flex align-items-center flex-wrap mb-30">
-                  <h2 class="mr-40">Invoice</h2>
-                  <a href="#0" class="main-btn primary-btn btn-hover btn-sm">
-                    <i class="lni lni-plus mr-5"></i> New Invoice</a
-                  >
+                <div class="titlemb-30">
+                  <h2>Icons</h2>
                 </div>
               </div>
               <!-- end col -->
@@ -441,7 +438,7 @@
                         <a href="#0">Dashboard</a>
                       </li>
                       <li class="breadcrumb-item active" aria-current="page">
-                        Invoice
+                        Icons
                       </li>
                     </ol>
                   </nav>
@@ -452,202 +449,403 @@
             <!-- end row -->
           </div>
           <!-- ========== title-wrapper end ========== -->
-
-          <!-- Invoice Wrapper Start -->
-          <div class="invoice-wrapper">
+          <div class="icons-wrapper">
             <div class="row">
               <div class="col-12">
-                <div class="invoice-card card-style mb-30">
-                  <div class="invoice-header">
-                    <div class="invoice-for">
-                      <h2 class="mb-10">Invoice</h2>
-                      <p class="text-sm">
-                        Admin Dashboard Design & Development
-                      </p>
-                    </div>
-                    <div class="invoice-logo">
-                      <img src="assets/images/invoice/uideck-logo.svg" alt="" />
-                    </div>
-                    <div class="invoice-date">
-                      <p><span>Date Issued:</span> 20/02/2021</p>
-                      <p><span>Date Due:</span> 20/02/2023</p>
-                      <p><span>Order ID:</span> #5467</p>
+                <div class="card-style">
+                  <div class="title d-flex justify-content-between">
+                    <div class="left">
+                      <h6 class="text-medium mb-10">Icons Pack</h6>
                     </div>
                   </div>
-                  <div class="invoice-address">
-                    <div class="address-item">
-                      <h5 class="text-bold">From</h5>
-                      <h1>John Doe</h1>
-                      <p class="text-sm">
-                        3891 Ranchview Dr. Richardson, California 62639
-                      </p>
-                      <p class="text-sm">
-                        <span class="text-medium">Email:</span>
-                        admin@example.com
-                      </p>
+                  <!-- End Title -->
+                  <div class="icons" id="newIcons">
+                    <div><i class="mdi mdi-abacus"></i><span>abacus</span></div>
+                    <div>
+                      <i class="mdi mdi-alarm-light-off"></i
+                      ><span>alarm-light-off</span>
                     </div>
-                    <div class="address-item">
-                      <h5 class="text-bold">To</h5>
-                      <h1>Santa Gosh</h1>
-                      <p class="text-sm">
-                        2972 Westheimer Rd. Santa Ana, Illinois 85486
-                      </p>
-                      <p class="text-sm">
-                        <span class="text-medium">Email:</span>
-                        admin@example.com
-                      </p>
+                    <div>
+                      <i class="mdi mdi-alarm-light-off-outline"></i
+                      ><span>alarm-light-off-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-broadcast"></i><span>broadcast</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-broadcast-off"></i
+                      ><span>broadcast-off</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-calendar-clock-outline"></i
+                      ><span>calendar-clock-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-chat-question"></i
+                      ><span>chat-question</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-chat-question-outline"></i
+                      ><span>chat-question-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-check-decagram-outline"></i
+                      ><span>check-decagram-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-clipboard-clock"></i
+                      ><span>clipboard-clock</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-clipboard-clock-outline"></i
+                      ><span>clipboard-clock-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-cookie-clock"></i
+                      ><span>cookie-clock</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-cookie-clock-outline"></i
+                      ><span>cookie-clock-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-cookie-edit"></i
+                      ><span>cookie-edit</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-cookie-edit-outline"></i
+                      ><span>cookie-edit-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-cookie-lock"></i
+                      ><span>cookie-lock</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-cookie-lock-outline"></i
+                      ><span>cookie-lock-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-cookie-off"></i><span>cookie-off</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-cookie-off-outline"></i
+                      ><span>cookie-off-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-cookie-refresh"></i
+                      ><span>cookie-refresh</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-cookie-refresh-outline"></i
+                      ><span>cookie-refresh-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-dog-side-off"></i
+                      ><span>dog-side-off</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-fan-auto"></i><span>fan-auto</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-fire-off"></i><span>fire-off</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-firework-off"></i
+                      ><span>firework-off</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-food-turkey"></i
+                      ><span>food-turkey</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-gift-off"></i><span>gift-off</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-gift-off-outline"></i
+                      ><span>gift-off-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-gift-open"></i><span>gift-open</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-gift-open-outline"></i
+                      ><span>gift-open-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-kettle-pour-over"></i
+                      ><span>kettle-pour-over</span>
+                    </div>
+                    <div><i class="mdi mdi-koala"></i><span>koala</span></div>
+                    <div>
+                      <i class="mdi mdi-message-question"></i
+                      ><span>message-question</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-message-question-outline"></i
+                      ><span>message-question-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-message-reply-outline"></i
+                      ><span>message-reply-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-message-reply-text-outline"></i
+                      ><span>message-reply-text-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-movie-check"></i
+                      ><span>movie-check</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-movie-check-outline"></i
+                      ><span>movie-check-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-movie-cog"></i><span>movie-cog</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-movie-cog-outline"></i
+                      ><span>movie-cog-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-movie-minus"></i
+                      ><span>movie-minus</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-movie-minus-outline"></i
+                      ><span>movie-minus-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-movie-off"></i><span>movie-off</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-movie-off-outline"></i
+                      ><span>movie-off-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-movie-open-check"></i
+                      ><span>movie-open-check</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-movie-open-check-outline"></i
+                      ><span>movie-open-check-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-movie-open-cog"></i
+                      ><span>movie-open-cog</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-movie-open-cog-outline"></i
+                      ><span>movie-open-cog-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-movie-open-edit"></i
+                      ><span>movie-open-edit</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-movie-open-edit-outline"></i
+                      ><span>movie-open-edit-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-movie-open-minus"></i
+                      ><span>movie-open-minus</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-movie-open-minus-outline"></i
+                      ><span>movie-open-minus-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-movie-open-off"></i
+                      ><span>movie-open-off</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-movie-open-off-outline"></i
+                      ><span>movie-open-off-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-movie-open-play"></i
+                      ><span>movie-open-play</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-movie-open-play-outline"></i
+                      ><span>movie-open-play-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-movie-open-plus"></i
+                      ><span>movie-open-plus</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-movie-open-plus-outline"></i
+                      ><span>movie-open-plus-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-movie-open-remove"></i
+                      ><span>movie-open-remove</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-movie-open-remove-outline"></i
+                      ><span>movie-open-remove-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-movie-open-settings"></i
+                      ><span>movie-open-settings</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-movie-open-settings-outline"></i
+                      ><span>movie-open-settings-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-movie-open-star"></i
+                      ><span>movie-open-star</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-movie-open-star-outline"></i
+                      ><span>movie-open-star-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-movie-play"></i><span>movie-play</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-movie-play-outline"></i
+                      ><span>movie-play-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-movie-plus"></i><span>movie-plus</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-movie-plus-outline"></i
+                      ><span>movie-plus-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-movie-remove"></i
+                      ><span>movie-remove</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-movie-remove-outline"></i
+                      ><span>movie-remove-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-movie-settings"></i
+                      ><span>movie-settings</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-movie-settings-outline"></i
+                      ><span>movie-settings-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-movie-star"></i><span>movie-star</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-movie-star-outline"></i
+                      ><span>movie-star-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-projector-screen-outline"></i
+                      ><span>projector-screen-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-robot-happy"></i
+                      ><span>robot-happy</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-robot-happy-outline"></i
+                      ><span>robot-happy-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-script-text-key"></i
+                      ><span>script-text-key</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-script-text-key-outline"></i
+                      ><span>script-text-key-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-script-text-play"></i
+                      ><span>script-text-play</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-script-text-play-outline"></i
+                      ><span>script-text-play-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-star-shooting"></i
+                      ><span>star-shooting</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-star-shooting-outline"></i
+                      ><span>star-shooting-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-surround-sound-2-1"></i
+                      ><span>surround-sound-2-1</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-surround-sound-5-1-2"></i
+                      ><span>surround-sound-5-1-2</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-table-picnic"></i
+                      ><span>table-picnic</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-tag-arrow-down"></i
+                      ><span>tag-arrow-down</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-tag-arrow-down-outline"></i
+                      ><span>tag-arrow-down-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-tag-arrow-left"></i
+                      ><span>tag-arrow-left</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-tag-arrow-left-outline"></i
+                      ><span>tag-arrow-left-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-tag-arrow-right"></i
+                      ><span>tag-arrow-right</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-tag-arrow-right-outline"></i
+                      ><span>tag-arrow-right-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-tag-arrow-up"></i
+                      ><span>tag-arrow-up</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-tag-arrow-up-outline"></i
+                      ><span>tag-arrow-up-outline</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-train-car-passenger"></i
+                      ><span>train-car-passenger</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-train-car-passenger-door"></i
+                      ><span>train-car-passenger-door</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-train-car-passenger-door-open"></i
+                      ><span>train-car-passenger-door-open</span>
+                    </div>
+                    <div>
+                      <i class="mdi mdi-train-car-passenger-variant"></i
+                      ><span>train-car-passenger-variant</span>
+                    </div>
+                    <div><i class="mdi mdi-turkey"></i><span>turkey</span></div>
+                    <div>
+                      <i class="mdi mdi-webcam-off"></i><span>webcam-off</span>
                     </div>
                   </div>
-                  <div class="table-responsive">
-                    <table class="invoice-table table">
-                      <thead>
-                        <tr>
-                          <th>
-                            <h6 class="text-sm text-medium">Service</h6>
-                          </th>
-                          <th>
-                            <h6 class="text-sm text-medium">Descriptions</h6>
-                          </th>
-                          <th>
-                            <h6 class="text-sm text-medium">Qty</h6>
-                          </th>
-                          <th>
-                            <h6 class="text-sm text-medium">Amounts</h6>
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>
-                            <p class="text-sm">Admin Dashboard</p>
-                          </td>
-                          <td>
-                            <p class="text-sm">
-                              Design and Development Service
-                            </p>
-                          </td>
-                          <td>
-                            <p class="text-sm">3</p>
-                          </td>
-                          <td>
-                            <p class="text-sm">$700</p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <p class="text-sm">Landing Page</p>
-                          </td>
-                          <td>
-                            <p class="text-sm">
-                              Landing Page Ui kit design and Development
-                            </p>
-                          </td>
-                          <td>
-                            <p class="text-sm">1</p>
-                          </td>
-                          <td>
-                            <p class="text-sm">$1000</p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <p class="text-sm">Web design</p>
-                          </td>
-                          <td>
-                            <p class="text-sm">
-                              Web Design and Development and Seo
-                            </p>
-                          </td>
-                          <td>
-                            <p class="text-sm">2</p>
-                          </td>
-                          <td>
-                            <p class="text-sm">$4000</p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td></td>
-                          <td></td>
-                          <td>
-                            <h6 class="text-sm text-medium">Subtotal</h6>
-                          </td>
-                          <td>
-                            <h6 class="text-sm text-bold">$5700</h6>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td></td>
-                          <td></td>
-                          <td>
-                            <h6 class="text-sm text-medium">Discount</h6>
-                          </td>
-                          <td>
-                            <h6 class="text-sm text-bold">45%</h6>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td></td>
-                          <td></td>
-                          <td>
-                            <h6 class="text-sm text-medium">Shipping Charge</h6>
-                          </td>
-                          <td>
-                            <h6 class="text-sm text-bold">Free</h6>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td></td>
-                          <td></td>
-                          <td>
-                            <h4>Total</h4>
-                          </td>
-                          <td>
-                            <h4>$3135</h4>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <div class="note-wrapper warning-alert py-4 px-3 px-lg-5">
-                    <div class="alert">
-                      <h5 class="text-bold mb-15">Notes:</h5>
-                      <p class="text-sm text-gray">
-                        All accounts are to be paid within 7 days from receipt
-                        of invoice. To be paid by cheque or credit card or
-                        direct payment online. If account is not paid within 7
-                        days the credits details supplied as confirmation of
-                        work undertaken will be charged the agreed quoted fee
-                        noted above.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="invoice-action">
-                    <ul
-                      class="d-flex flex-wrap align-items-center justify-content-center"
-                    >
-                      <li class="m-2">
-                        <a
-                          href="#0"
-                          class="main-btn primary-btn-outline btn-hover"
-                        >
-                          Download Invoice
-                        </a>
-                      </li>
-                      <li class="m-2">
-                        <a href="#0" class="main-btn primary-btn btn-hover">
-                          Send Invoice
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+
+                  <a href="#0" class="text-primary">and 5000+ icons.</a>
                 </div>
-                <!-- End Card -->
               </div>
-              <!-- ENd Col -->
             </div>
-            <!-- End Row -->
           </div>
-          <!-- Invoice Wrapper End -->
         </div>
         <!-- end container -->
       </section>
@@ -682,6 +880,34 @@
       <!-- ========== footer end =========== -->
     </main>
     <!-- ======== main-wrapper end =========== -->
+
+    <!-- ============ Theme Option Start ============= -->
+    <button class="option-btn">
+      <i class="lni lni-cog"></i>
+    </button>
+    <div class="option-overlay"></div>
+    <div class="option-box">
+      <div class="option-header">
+        <h5>Settings</h5>
+        <button class="option-btn-close">
+          <i class="lni lni-close"></i>
+        </button>
+      </div>
+      <h6 class="mb-10">Layout</h6>
+      <ul class="mb-30">
+        <li><button class="leftSidebarButton active">Left Sidebar</button></li>
+        <li><button class="rightSidebarButton">Right Sidebar</button></li>
+      </ul>
+
+      <h6 class="mb-10">Theme</h6>
+      <ul>
+        <li>
+          <button class="defaultThemeButton active">Default Theme</button>
+        </li>
+        <li><button class="darkThemeButton">Dark Theme</button></li>
+      </ul>
+    </div>
+    <!-- ============ Theme Option End ============= -->
 
     <!-- ========= All Javascript files linkup ======== -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>

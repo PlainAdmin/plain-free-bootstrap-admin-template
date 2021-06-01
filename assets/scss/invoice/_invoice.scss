@@ -1,0 +1,75 @@
+/* =========== Invoice Css ============= */
+
+.invoice-card {
+  .invoice-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba($black, 0.1);
+
+    @media #{$xs} {
+      flex-direction: column;
+    }
+
+    .invoice-logo {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      overflow: hidden;
+
+      @media #{$xs} {
+        order: -1;
+        margin-bottom: 30px;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .invoice-date {
+      @media #{$xs} {
+        margin-top: 30px;
+      }
+      p {
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 10px;
+
+        span {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  .invoice-address {
+    padding-top: 30px;
+    display: flex;
+    margin-bottom: 40px;
+
+    @media #{$xs} {
+      display: block;
+    }
+
+    .address-item {
+      margin-right: 30px;
+      min-width: 250px;
+
+      h5 {
+        margin-bottom: 15px;
+      }
+
+      h1 {
+        margin-bottom: 10px;
+        font-size: 24px;
+      }
+
+      p {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

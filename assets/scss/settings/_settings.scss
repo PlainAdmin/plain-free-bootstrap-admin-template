@@ -1,0 +1,38 @@
+/* =========== settings css ============== */
+
+.settings-card-1 {
+  .profile-info {
+    .profile-image {
+      max-width: 75px;
+      width: 100%;
+      height: 75px;
+      border-radius: 50%;
+      margin-right: 20px;
+      position: relative;
+
+      img {
+        width: 100%;
+        border-radius: 50%;
+      }
+
+      .update-image {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 30px;
+        height: 30px;
+        background: $light;
+        border: 2px solid $white;
+        @include flex-center;
+        border-radius: 50%;
+
+        input {
+          opacity: 0;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

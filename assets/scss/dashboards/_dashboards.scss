@@ -1,0 +1,84 @@
+/* ========== Dashboards css ================= */
+
+.legend3 {
+  li {
+    margin-right: 25px;
+
+    div {
+      white-space: nowrap;
+    }
+
+    .bg-color {
+      position: relative;
+      margin-left: 12px;
+      border-radius: 50%;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: inherit;
+        left: -12px;
+        top: 5px;
+      }
+    }
+    .text {
+      margin-left: 10px;
+
+      p {
+        display: flex;
+        align-items: center;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.todo-list-wrapper {
+  ul {
+    li.todo-list-item {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 20px;
+      margin-bottom: 25px;
+
+      &:last-child {
+        margin-bottom: 0px;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 4px;
+        height: 100%;
+      }
+
+      &.success {
+        &::before {
+          background: $success;
+        }
+      }
+      &.primary {
+        &::before {
+          background: $primary;
+        }
+      }
+      &.orange {
+        &::before {
+          background: $orange;
+        }
+      }
+      &.danger {
+        &::before {
+          background: $danger;
+        }
+      }
+    }
+  }
+}

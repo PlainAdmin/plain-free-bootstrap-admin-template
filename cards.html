@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.svg"
+      type="image/x-icon"
+    />
+    <title>Cards | PlainAdmin</title>
+
+    <!-- ========== All CSS files linkup ========= -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/LineIcons.css" />
+    <link rel="stylesheet" href="assets/css/fullcalendar.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <!-- ======== sidebar-nav start =========== -->
+    <aside class="sidebar-nav-wrapper">
+      <div class="navbar-logo">
+        <a href="#0">
+          <img src="assets/images/logo/logo.svg" alt="" />
+        </a>
+      </div>
+      <nav class="sidebar-nav">
+        <ul>
+          <li class="nav-item nav-item-has-children">
+            <a
+              href="#0"
+              class="collapsed"
+              data-bs-toggle="collapse"
+              data-bs-target="#ddmenu_1"
+              aria-controls="ddmenu_1"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="icon"><i class="lni lni-dashboard"></i></span>
+              <span class="text">Dashboard</span>
+            </a>
+            <ul id="ddmenu_1" class="collapse dropdown-nav">
+              <li>
+                <a href="index.html">
+                  <i class="lni lni-arrow-right"></i> e-Commerce
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item nav-item-has-children">
+            <a
+              href="#0"
+              class="collapsed"
+              data-bs-toggle="collapse"
+              data-bs-target="#ddmenu_2"
+              aria-controls="ddmenu_2"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="icon"><i class="lni lni-layout"></i></span>
+              <span class="text">Pages</span>
+            </a>
+            <ul id="ddmenu_2" class="collapse dropdown-nav">
+              <li>
+                <a href="settings.html">
+                  <i class="lni lni-arrow-right"></i> Settings
+                </a>
+              </li>
+              <li>
+                <a href="projects.html">
+                  <i class="lni lni-arrow-right"></i> Projects
+                </a>
+              </li>
+
+              <li>
+                <a href="pricing.html">
+                  <i class="lni lni-arrow-right"></i> Pricing
+                </a>
+              </li>
+
+              <li>
+                <a href="blank-page.html">
+                  <i class="lni lni-arrow-right"></i> Blank Page
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="invoice.html">
+              <span class="icon"><i class="lni lni-credit-cards"></i></span>
+              <span class="text">Invoice</span>
+            </a>
+          </li>
+
+          <li class="nav-item nav-item-has-children">
+            <a
+              href="#0"
+              class="collapsed"
+              data-bs-toggle="collapse"
+              data-bs-target="#ddmenu_3"
+              aria-controls="ddmenu_3"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="icon"><i class="lni lni-users"></i></span>
+              <span class="text">Auth</span>
+            </a>
+            <ul id="ddmenu_3" class="collapse dropdown-nav">
+              <li>
+                <a href="signin.html">
+                  <i class="lni lni-arrow-right"></i> Sign In
+                </a>
+              </li>
+              <li>
+                <a href="signup.html">
+                  <i class="lni lni-arrow-right"></i> Sign Up
+                </a>
+              </li>
+              <li>
+                <a href="reset-password.html">
+                  <i class="lni lni-arrow-right"></i> Reset Password
+                </a>
+              </li>
+            </ul>
+          </li>
+          <span class="divider"><hr /></span>
+          <li class="nav-item nav-item-has-children">
+            <a
+              href="#0"
+              class=""
+              data-bs-toggle="collapse"
+              data-bs-target="#ddmenu_4"
+              aria-controls="ddmenu_4"
+              aria-expanded="true"
+              aria-label="Toggle navigation"
+            >
+              <span class="icon"><i class="lni lni-layout"></i></span>
+              <span class="text">UI Elements </span>
+            </a>
+            <ul id="ddmenu_4" class="collapsed show dropdown-nav">
+              <li>
+                <a href="alerts.html">
+                  <i class="lni lni-arrow-right"></i> Alerts
+                </a>
+              </li>
+              <li>
+                <a href="buttons.html">
+                  <i class="lni lni-arrow-right"></i> Buttons
+                </a>
+              </li>
+              <li>
+                <a href="cards.html" class="active">
+                  <i class="lni lni-arrow-right"></i> Cards
+                </a>
+              </li>
+
+              <li>
+                <a href="tabs.html">
+                  <i class="lni lni-arrow-right"></i> Tabs
+                </a>
+              </li>
+              <li>
+                <a href="typography.html">
+                  <i class="lni lni-arrow-right"></i> Typography
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item nav-item-has-children">
+            <a
+              href="#0"
+              class="collapsed"
+              data-bs-toggle="collapse"
+              data-bs-target="#ddmenu_55"
+              aria-controls="ddmenu_55"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="icon"><i class="lni lni-package"></i></span>
+              <span class="text">Icons</span>
+            </a>
+            <ul id="ddmenu_55" class="collapse dropdown-nav">
+              <li>
+                <a href="icons.html">
+                  <i class="lni lni-arrow-right"></i> LineIcons
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item nav-item-has-children">
+            <a
+              href="#0"
+              class="collapsed"
+              data-bs-toggle="collapse"
+              data-bs-target="#ddmenu_5"
+              aria-controls="ddmenu_5"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="icon"><i class="lni lni-check-box"></i></span>
+              <span class="text"> Forms </span>
+            </a>
+            <ul id="ddmenu_5" class="collapse dropdown-nav">
+              <li>
+                <a href="form-elements.html">
+                  <i class="lni lni-arrow-right"></i> Form Elements
+                </a>
+              </li>
+              <li>
+                <a href="form-layout.html">
+                  <i class="lni lni-arrow-right"></i> Form Layout
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="tables.html">
+              <span class="icon"><i class="lni lni-grid-alt"></i></span>
+              <span class="text">Tables</span>
+            </a>
+          </li>
+          <span class="divider"><hr /></span>
+
+          <li class="nav-item">
+            <a href="notification.html">
+              <span class="icon"><i class="lni lni-alarm"></i></span>
+              <span class="text">Notifications</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="overlay"></div>
+    <!-- ======== sidebar-nav end =========== -->
+
+    <!-- ======== main-wrapper start =========== -->
+    <main class="main-wrapper">
+      <!-- ========== header start ========== -->
+      <header class="header">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-5 col-md-5 col-6">
+              <div class="header-left d-flex align-items-center">
+                <div class="menu-toggle-btn mr-20">
+                  <button
+                    id="menu-toggle"
+                    class="main-btn primary-btn btn-hover"
+                  >
+                    <i class="lni lni-chevron-left me-2"></i> Menu
+                  </button>
+                </div>
+                <div class="header-search d-none d-md-flex">
+                  <form action="#">
+                    <input type="text" placeholder="Search..." />
+                    <button><i class="lni lni-search-alt"></i></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7 col-md-7 col-6">
+              <div class="header-right">
+                <!-- notification start -->
+                <div class="notification-box ml-15 d-none d-md-flex">
+                  <button
+                    class="dropdown-toggle"
+                    type="button"
+                    id="notification"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="lni lni-alarm"></i>
+                    <span>2</span>
+                  </button>
+                  <ul
+                    class="dropdown-menu dropdown-menu-end"
+                    aria-labelledby="notification"
+                  >
+                    <li>
+                      <a href="#0">
+                        <div class="image">
+                          <img src="assets/images/lead/lead-6.png" alt="" />
+                        </div>
+                        <div class="content">
+                          <h6>
+                            John Doe
+                            <span class="text-regular">
+                              comment on a product.
+                            </span>
+                          </h6>
+                          <p>
+                            Lorem ipsum dolor sit amet, consect etur adipiscing
+                            elit Vivamus tortor.
+                          </p>
+                          <span>10 mins ago</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#0">
+                        <div class="image">
+                          <img src="assets/images/lead/lead-1.png" alt="" />
+                        </div>
+                        <div class="content">
+                          <h6>
+                            Jonathon
+                            <span class="text-regular">
+                              like on a product.
+                            </span>
+                          </h6>
+                          <p>
+                            Lorem ipsum dolor sit amet, consect etur adipiscing
+                            elit Vivamus tortor.
+                          </p>
+                          <span>10 mins ago</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- notification end -->
+                <!-- message start -->
+                <div class="header-message-box ml-15 d-none d-md-flex">
+                  <button
+                    class="dropdown-toggle"
+                    type="button"
+                    id="message"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="lni lni-envelope"></i>
+                    <span>3</span>
+                  </button>
+                  <ul
+                    class="dropdown-menu dropdown-menu-end"
+                    aria-labelledby="message"
+                  >
+                    <li>
+                      <a href="#0">
+                        <div class="image">
+                          <img src="assets/images/lead/lead-5.png" alt="" />
+                        </div>
+                        <div class="content">
+                          <h6>Jacob Jones</h6>
+                          <p>Hey!I can across your profile and ...</p>
+                          <span>10 mins ago</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#0">
+                        <div class="image">
+                          <img src="assets/images/lead/lead-3.png" alt="" />
+                        </div>
+                        <div class="content">
+                          <h6>John Doe</h6>
+                          <p>Would you mind please checking out</p>
+                          <span>12 mins ago</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#0">
+                        <div class="image">
+                          <img src="assets/images/lead/lead-2.png" alt="" />
+                        </div>
+                        <div class="content">
+                          <h6>Anee Lee</h6>
+                          <p>Hey! are you available for freelance?</p>
+                          <span>1h ago</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- message end -->
+                <!-- filter start -->
+                <div class="filter-box ml-15 d-none d-md-flex">
+                  <button class="" type="button" id="filter">
+                    <i class="lni lni-funnel"></i>
+                  </button>
+                </div>
+                <!-- filter end -->
+                <!-- profile start -->
+                <div class="profile-box ml-15">
+                  <button
+                    class="dropdown-toggle bg-transparent border-0"
+                    type="button"
+                    id="profile"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <div class="profile-info">
+                      <div class="info">
+                        <h6>John Doe</h6>
+                        <div class="image">
+                          <img
+                            src="assets/images/profile/profile-image.png"
+                            alt=""
+                          />
+                          <span class="status"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <i class="lni lni-chevron-down"></i>
+                  </button>
+                  <ul
+                    class="dropdown-menu dropdown-menu-end"
+                    aria-labelledby="profile"
+                  >
+                    <li>
+                      <a href="#0">
+                        <i class="lni lni-user"></i> View Profile
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#0">
+                        <i class="lni lni-alarm"></i> Notifications
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#0"> <i class="lni lni-inbox"></i> Messages </a>
+                    </li>
+                    <li>
+                      <a href="#0"> <i class="lni lni-cog"></i> Settings </a>
+                    </li>
+                    <li>
+                      <a href="#0"> <i class="lni lni-exit"></i> Sign Out </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- profile end -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- ========== header end ========== -->
+
+      <!-- ========== card components start ========== -->
+      <section class="card-components">
+        <div class="container-fluid">
+          <!-- ========== title-wrapper start ========== -->
+          <div class="title-wrapper pt-30">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <div class="title mb-30">
+                  <h2>Cards</h2>
+                </div>
+              </div>
+              <!-- end col -->
+              <div class="col-md-6">
+                <div class="breadcrumb-wrapper mb-30">
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item">
+                        <a href="#0">Dashboard</a>
+                      </li>
+                      <li class="breadcrumb-item">
+                        <a href="#0">UI Components</a>
+                      </li>
+                      <li class="breadcrumb-item active" aria-current="page">
+                        Cards
+                      </li>
+                    </ol>
+                  </nav>
+                </div>
+              </div>
+              <!-- end col -->
+            </div>
+            <!-- end row -->
+          </div>
+          <!-- ========== title-wrapper end ========== -->
+
+          <!-- ========== cards-styles start ========== -->
+          <div class="cards-styles">
+            <!-- ========= card-style-1 start ========= -->
+            <div class="row">
+              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                <div class="card-style-1 mb-30">
+                  <div class="card-meta">
+                    <div class="image">
+                      <img
+                        src="assets/images/cards/card-style-1/admin-1.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="text">
+                      <p class="text-sm text-medium">
+                        Posted by : <a href="#0">Hammad</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-image">
+                    <a href="#0">
+                      <img
+                        src="assets/images/cards/card-style-1/card-1.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="card-content">
+                    <h4><a href="#0"> Card Title here </a></h4>
+                    <p>
+                      With supporting text below as a natural lead-in to
+                      additional content. consectetur adipiscing elit. Integer
+                      posuere erat a ante.
+                    </p>
+                  </div>
+                </div>
+                <!-- end card-->
+              </div>
+              <!-- end col -->
+              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                <div class="card-style-1 mb-30">
+                  <div class="card-meta">
+                    <div class="image">
+                      <img
+                        src="assets/images/cards/card-style-1/admin-2.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="text">
+                      <p class="text-sm text-medium">
+                        Posted by : <a href="#0">Mahmud</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-image">
+                    <a href="#0">
+                      <img
+                        src="assets/images/cards/card-style-1/card-2.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="card-content">
+                    <h4><a href="#0"> Card Title here </a></h4>
+                    <p>
+                      With supporting text below as a natural lead-in to
+                      additional content. consectetur adipiscing elit. Integer
+                      posuere erat a ante.
+                    </p>
+                  </div>
+                </div>
+                <!-- end card-->
+              </div>
+              <!-- end col -->
+              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                <div class="card-style-1 mb-30">
+                  <div class="card-meta">
+                    <div class="image">
+                      <img
+                        src="assets/images/cards/card-style-1/admin-3.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="text">
+                      <p class="text-sm text-medium">
+                        Posted by : <a href="#0">Jamil Kareem</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-image">
+                    <a href="#0">
+                      <img
+                        src="assets/images/cards/card-style-1/card-3.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="card-content">
+                    <h4><a href="#0"> Card Title here </a></h4>
+                    <p>
+                      With supporting text below as a natural lead-in to
+                      additional content. consectetur adipiscing elit. Integer
+                      posuere erat a ante.
+                    </p>
+                  </div>
+                </div>
+                <!-- end card-->
+              </div>
+              <!-- end col -->
+            </div>
+            <!-- end row -->
+            <!-- ========= card-style-1 end ========= -->
+
+            <!-- ========= card-style-2 start ========= -->
+            <div class="row">
+              <div class="col-12">
+                <div class="title mt-30 mb-30">
+                  <h2>Cards</h2>
+                </div>
+              </div>
+              <!-- end col -->
+              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                <div class="card-style-2 mb-30">
+                  <div class="card-image">
+                    <a href="#0">
+                      <img
+                        src="assets/images/cards/card-style-2/card-1.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="card-content">
+                    <h4><a href="#0">Card Title here </a></h4>
+                    <p>
+                      With supporting text below as a natural lead-in to
+                      additional content. consectetur adipiscing elit. Integer
+                      posuere erat a ante.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- end col -->
+              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                <div class="card-style-2 mb-30">
+                  <div class="card-image">
+                    <a href="#0">
+                      <img
+                        src="assets/images/cards/card-style-2/card-2.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="card-content">
+                    <h4><a href="#0">Card Title here </a></h4>
+                    <p>
+                      With supporting text below as a natural lead-in to
+                      additional content. consectetur adipiscing elit. Integer
+                      posuere erat a ante.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- end col -->
+              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                <div class="card-style-2 mb-30">
+                  <div class="card-image">
+                    <a href="#0">
+                      <img
+                        src="assets/images/cards/card-style-2/card-3.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="card-content">
+                    <h4><a href="#0">Card Title here </a></h4>
+                    <p>
+                      With supporting text below as a natural lead-in to
+                      additional content. consectetur adipiscing elit. Integer
+                      posuere erat a ante.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- end col -->
+            </div>
+            <!-- end row -->
+            <!-- ========= card-style-2 end ========= -->
+
+            <!-- ========= card-style-3 start ========= -->
+            <div class="row">
+              <div class="col-12">
+                <div class="title mt-30 mb-30">
+                  <h2>Cards</h2>
+                </div>
+              </div>
+              <!-- end col -->
+              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                <div class="card-style-3 mb-30">
+                  <div class="card-content">
+                    <h4><a href="#0">Card Title here </a></h4>
+                    <p>
+                      With supporting text below as a natural lead-in to
+                      additional content. consectetur adipiscing elit. Integer
+                      posuere erat a ante. With supporting text below as a
+                      natural lead-in to additional content. consectetur
+                      adipiscing elit. Integer posuere erat a ante.
+                    </p>
+                    <a href="#0" class="read-more">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <!-- end col -->
+              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                <div class="card-style-3 mb-30">
+                  <div class="card-content">
+                    <h4><a href="#0">Card Title here </a></h4>
+                    <p>
+                      With supporting text below as a natural lead-in to
+                      additional content. consectetur adipiscing elit. Integer
+                      posuere erat a ante. With supporting text below as a
+                      natural lead-in to additional content. consectetur
+                      adipiscing elit. Integer posuere erat a ante.
+                    </p>
+                    <a href="#0" class="read-more">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <!-- end col -->
+              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                <div class="card-style-3 mb-30">
+                  <div class="card-content">
+                    <h4><a href="#0">Card Title here </a></h4>
+                    <p>
+                      With supporting text below as a natural lead-in to
+                      additional content. consectetur adipiscing elit. Integer
+                      posuere erat a ante. With supporting text below as a
+                      natural lead-in to additional content. consectetur
+                      adipiscing elit. Integer posuere erat a ante.
+                    </p>
+                    <a href="#0" class="read-more">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <!-- end col -->
+            </div>
+            <!-- end row -->
+            <!-- ========= card-style-3 end ========= -->
+          </div>
+          <!-- ========== cards-styles end ========== -->
+        </div>
+        <!-- end container -->
+      </section>
+      <!-- ========== card components end ========== -->
+
+      <!-- ========== footer start =========== -->
+      <footer class="footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 order-last order-md-first">
+              <div class="copyright text-center text-md-start">
+                <p class="text-sm">
+                  Designed and Developed by
+                  <a href="#0" rel="nofollow" target="_blank">UIdeck</a>
+                </p>
+              </div>
+            </div>
+            <!-- end col-->
+            <div class="col-md-6">
+              <div
+                class="terms d-flex justify-content-center justify-content-md-end"
+              >
+                <a href="#0" class="text-sm">Term & Conditions</a>
+                <a href="#0" class="text-sm ml-15">Privacy & Policy</a>
+              </div>
+            </div>
+          </div>
+          <!-- end row -->
+        </div>
+        <!-- end container -->
+      </footer>
+      <!-- ========== footer end =========== -->
+    </main>
+    <!-- ======== main-wrapper end =========== -->
+
+    <!-- ========= All Javascript files linkup ======== -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/Chart.min.js"></script>
+    <script src="assets/js/dynamic-pie-chart.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/fullcalendar.js"></script>
+    <script src="assets/js/jvectormap.min.js"></script>
+    <script src="assets/js/world-merc.js"></script>
+    <script src="assets/js/polyfill.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

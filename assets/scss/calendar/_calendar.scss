@@ -1,0 +1,73 @@
+/* ============ Calendar Css ============= */
+
+.calendar-card {
+  .fc {
+    height: 450px;
+
+    &#calendar-full {
+      height: 600px;
+    }
+
+    table {
+      border: none;
+    }
+
+    .fc-toolbar-title {
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .fc-button {
+      background: transparent;
+      border: none;
+      color: $gray;
+      text-transform: capitalize;
+
+      &:focus {
+        @include box-shadow(none);
+        color: $primary;
+      }
+    }
+
+    th {
+      text-align: left;
+      border: none;
+      border-bottom: 1px solid $black-10;
+
+      a {
+        color: $gray;
+        font-weight: 400;
+      }
+    }
+    td {
+      border: none;
+    }
+
+    .fc-day {
+      padding: 5px;
+      background: $white;
+
+      &.fc-day-today {
+        .fc-daygrid-day-frame {
+          background: $primary;
+
+          a {
+            color: $white;
+          }
+        }
+      }
+
+      .fc-daygrid-day-frame {
+        display: flex;
+        justify-content: flex-start;
+        background: #f9f9f9;
+        border-radius: 6px;
+        padding: 5px;
+
+        a {
+          color: $gray;
+        }
+      }
+    }
+  }
+}

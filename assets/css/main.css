@@ -2990,7 +2990,8 @@ h6,
   padding: 20px 0px;
   height: 100vh;
   position: fixed;
-  overflow-x: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   top: 0;
   left: 0;
   z-index: 99;

@@ -1,5 +1,9 @@
 /* ========== Dashboards css ================= */
-
+#doughnutChart1 {
+  @media #{$xs} {
+    height: 250px !important;
+  }
+}
 .legend3 {
   li {
     margin-right: 25px;

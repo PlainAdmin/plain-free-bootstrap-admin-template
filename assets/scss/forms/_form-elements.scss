@@ -440,3 +440,10 @@
     }
   }
 }
+.button-group {
+  @media #{$xs} {
+    .main-btn {
+      width: 100%;
+    }
+  }
+}

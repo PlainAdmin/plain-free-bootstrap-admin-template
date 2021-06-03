@@ -72,4 +72,39 @@
       }
     }
   }
+
+  .invoice-action {
+    ul {
+      li {
+        @media #{$xs} {
+          flex: 1;
+        }
+
+        a {
+          @media #{$xs} {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.invoice-table {
+  th,
+  td {
+    padding: 10px 8px;
+  }
+  .service {
+    min-width: 150px;
+  }
+  .desc {
+    min-width: 150px;
+  }
+  .qty {
+    min-width: 150px;
+  }
+  .amount {
+    min-width: 100px;
+  }
 }

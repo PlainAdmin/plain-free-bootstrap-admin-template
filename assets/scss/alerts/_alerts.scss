@@ -4,6 +4,10 @@
   position: relative;
   margin-bottom: 20px;
 
+  @media #{$xs} {
+    padding-left: 0px !important;
+  }
+
   .left {
     max-width: 75px;
     width: 100%;
@@ -14,6 +18,10 @@
     left: 0;
     top: 0;
     @include flex-center;
+
+    @media #{$xs} {
+      display: none;
+    }
 
     h5 {
       @include transform(rotate(-90deg));

@@ -52,6 +52,20 @@
     }
   }
 
+  .lead-info {
+    min-width: 200px;
+  }
+  .lead-email {
+    min-width: 150px;
+    white-space: nowrap;
+  }
+  .lead-phone {
+    min-width: 160px;
+  }
+  .lead-company {
+    min-width: 180px;
+  }
+
   .referrals-image {
     min-width: 150px;
 
@@ -145,6 +159,12 @@
     th,
     td {
       vertical-align: middle;
+      padding: 10px 5px;
+    }
+
+    .min-width {
+      min-width: 80px;
+      white-space: nowrap;
     }
   }
 
@@ -154,30 +174,82 @@
   .product {
     display: flex;
     align-items: center;
+    min-width: 150px;
 
     .image {
       border-radius: 4px;
       overflow: hidden;
       margin-right: 15px;
-      width: 50px;
-      max-width: 100%;
+      max-width: 50px;
+      width: 100%;
       height: 50px;
 
       img {
         width: 100%;
       }
     }
+    p {
+      width: 100%;
+    }
   }
 }
 
 // ===== referrals-table
-.referrals-table {
+.referrals-table-card {
+  .title {
+    @media #{$xs} {
+      .right {
+        width: 100%;
+      }
+    }
+    @media #{$sm} {
+      .right {
+        width: auto;
+      }
+    }
+  }
+  .referrals-table {
+    td {
+      padding: 10px;
+    }
+  }
+}
+
+/* ===== lead-table ===== */
+.lead-table {
+  th,
   td {
-    padding: 10px;
+    padding: 10px 5px;
+  }
+
+  .name {
+    min-width: 120px;
+  }
+
+  .email {
+    min-width: 130px;
+  }
+  .project {
+    min-width: 150px;
+  }
+
+  .status {
+    min-width: 120px;
+    text-align: center;
+  }
+  .action {
+    min-width: 60px;
   }
 }
 
 // ======== Clients Table
+.clients-table-card {
+  .table {
+    .employee-info {
+      min-width: 150px;
+    }
+  }
+}
 .clients-table {
   th,
   td {
@@ -190,59 +262,5 @@
 
   .employee-image {
     margin-right: 0px;
-  }
-}
-
-.table-pagination {
-  ul {
-    li {
-      a {
-        width: 32px;
-        height: 32px;
-        background: $light-2;
-        border-radius: 4px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 14px;
-        color: $black-70;
-
-        &:hover,
-        &.active {
-          background: $primary;
-          color: $white;
-        }
-      }
-    }
-  }
-}
-
-.table-search {
-  form {
-    max-width: 270px;
-    position: relative;
-
-    input {
-      width: 100%;
-      border: 1px solid $light;
-      background: rgba($light, 0.5);
-      border-radius: 4px;
-      height: 46px;
-      padding-left: 44px;
-      @include transition(0.3s);
-
-      &:focus {
-        border-color: $primary;
-      }
-    }
-    button {
-      position: absolute;
-      border: none;
-      background: transparent;
-      left: 16px;
-      top: 0;
-      height: 46px;
-      color: $gray;
-    }
   }
 }

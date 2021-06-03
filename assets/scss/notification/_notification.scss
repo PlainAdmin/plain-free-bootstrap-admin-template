@@ -23,6 +23,10 @@
     width: 100%;
     padding-top: 10px;
 
+    @media #{$xs} {
+      display: none;
+    }
+
     input {
       background-color: $light;
       border-color: $light-2;
@@ -39,6 +43,10 @@
     display: flex;
     width: 100%;
 
+    @media #{$xs} {
+      flex-direction: column;
+    }
+
     .image {
       max-width: 50px;
       width: 100%;
@@ -49,6 +57,10 @@
       @include flex-center;
       font-weight: 600;
       margin-right: 15px;
+
+      @media #{$xs} {
+        margin-bottom: 15px;
+      }
 
       img {
         width: 100%;
@@ -73,6 +85,10 @@
     justify-content: flex-end;
     padding-top: 10px;
 
+    @media #{$xs} {
+      display: none;
+    }
+
     button {
       border: none;
       background: transparent;
@@ -89,5 +105,12 @@
     .dropdown-toggle::after {
       display: none;
     }
+  }
+}
+
+/* ========== Theme Change Css ============== */
+.darkTheme {
+  .single-notification {
+    border-color: $dark-2;
   }
 }

@@ -13,9 +13,8 @@
       margin: 10px;
       flex-basis: 215px;
 
-      @media #{$xs} {
-        flex-basis: auto;
-        min-width: 150px;
+      @media (max-width: 400px) {
+        flex-basis: 100%;
       }
 
       i {

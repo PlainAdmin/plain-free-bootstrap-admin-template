@@ -59,6 +59,14 @@
         height: 100%;
       }
 
+      @media #{$xs} {
+        display: block;
+
+        .todo-status {
+          margin-top: 20px;
+        }
+      }
+
       &.success {
         &::before {
           background: $success;

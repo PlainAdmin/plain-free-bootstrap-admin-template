@@ -1,1 +1,2 @@
-# plainadmin Free Version
+# PlainAdmin - Free Bootstrap 5 Dashboard Template
+

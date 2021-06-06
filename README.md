@@ -13,7 +13,19 @@ PlainAdmin built with vanilla Javascript (no jQuery), Bootstrap 5 and the simple
 
 If you are looking for a high-quality free admin template that comes with all essential dashboard components and features then, PlainAdmin is the perfect choice for you.
 
-### [📄 Documentation](https://plainadmin.com/docs/)
+## [📄 Documentation](https://plainadmin.com/docs/)
+- [Installation](https://plainadmin.com/docs/#installation)
+- [Quick Start](https://plainadmin.com/docs/#quick-start)
+- [Layout and Theme](https://plainadmin.com/docs/#layout-theme)
+- [Colors](https://plainadmin.com/docs/#colors)
+- [Alerts](https://plainadmin.com/docs/#alerts)
+- [Buttons](https://plainadmin.com/docs/#buttons)
+- [Cards](https://plainadmin.com/docs/#cards)
+- [Tabs](https://plainadmin.com/docs/#tabs)
+- [Forms](https://plainadmin.com/docs/#forms)
+- [Icons](https://plainadmin.com/docs/#icons)
+- [Tables](https://plainadmin.com/docs/#tables)
+- [Credits](https://plainadmin.com/docs/#credits)
 
 
 ### [✨ Template Details](https://plainadmin.com/)

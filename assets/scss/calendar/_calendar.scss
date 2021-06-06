@@ -31,25 +31,22 @@
 
     th {
       text-align: left;
-      border: none;
-      border-bottom: 1px solid $black-10;
+      border-bottom: 1px solid $black-10 !important;
+      border-right: 0px;
 
       a {
         color: $gray;
         font-weight: 400;
       }
     }
-    td {
-      border: none;
-    }
 
     .fc-day {
-      padding: 5px;
+      border-width: 4px;
       background: $white;
 
       &.fc-day-today {
         .fc-daygrid-day-frame {
-          background: $primary;
+          background: rgba($primary, 0.8);
 
           a {
             color: $white;
@@ -59,15 +56,21 @@
 
       .fc-daygrid-day-frame {
         display: flex;
-        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-end;
         background: #f9f9f9;
         border-radius: 6px;
-        padding: 5px;
+        // padding: 5px;
 
         a {
           color: $gray;
         }
       }
     }
+  }
+
+  .fc-theme-standard td,
+  .fc-theme-standard th {
+    border-color: transparent;
   }
 }

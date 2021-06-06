@@ -1948,28 +1948,30 @@ h6,
       color: #2f80ed; }
   .calendar-card .fc th {
     text-align: left;
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+    border-right: 0px; }
     .calendar-card .fc th a {
       color: #5d657b;
       font-weight: 400; }
-  .calendar-card .fc td {
-    border: none; }
   .calendar-card .fc .fc-day {
-    padding: 5px;
+    border-width: 4px;
     background: #fff; }
     .calendar-card .fc .fc-day.fc-day-today .fc-daygrid-day-frame {
-      background: #2f80ed; }
+      background: rgba(47, 128, 237, 0.8); }
       .calendar-card .fc .fc-day.fc-day-today .fc-daygrid-day-frame a {
         color: #fff; }
     .calendar-card .fc .fc-day .fc-daygrid-day-frame {
       display: flex;
-      justify-content: flex-start;
+      flex-direction: column;
+      align-items: flex-end;
       background: #f9f9f9;
-      border-radius: 6px;
-      padding: 5px; }
+      border-radius: 6px; }
       .calendar-card .fc .fc-day .fc-daygrid-day-frame a {
         color: #5d657b; }
+
+.calendar-card .fc-theme-standard td,
+.calendar-card .fc-theme-standard th {
+  border-color: transparent; }
 
 /* =========== Sidebar css =========== */
 .sidebar-nav-wrapper {

@@ -10,6 +10,7 @@
         padding: 0px 15px;
         height: 46px;
         line-height: 46px;
+        border-radius: 10px;
       }
     }
 
@@ -22,7 +23,7 @@
           width: 100%;
           border: 1px solid $light;
           background: rgba($light, 0.5);
-          border-radius: 4px;
+          border-radius: 10px;
           height: 46px;
           padding-left: 44px;
           @include transition(0.3s);
@@ -52,7 +53,7 @@
     button {
       border: 1px solid $light;
       background: rgba($light, 0.5);
-      border-radius: 4px;
+      border-radius: 10px;
       height: 46px;
       width: 46px;
       @include flex-center;
@@ -86,6 +87,7 @@
       right: 0;
       position: absolute;
       transform: translate3d(0px, 60px, 0px);
+      border-radius: 10px;
 
       li {
         padding: 3px 0px;
@@ -107,7 +109,7 @@
           padding: 8px 12px;
           display: flex;
           color: $black-70;
-          border-radius: 4px;
+          border-radius: 6px;
 
           .image {
             max-width: 35px;
@@ -159,7 +161,7 @@
     .notification-box {
       .dropdown-menu {
         &.dropdown-menu-end {
-          transform: translate3d(-304px, 60px, 0px);
+          transform: translate3d(0px, 60px, 0px);
         }
       }
     }
@@ -167,7 +169,7 @@
     .header-message-box {
       .dropdown-menu {
         &.dropdown-menu-end {
-          transform: translate3d(-304px, 60px, 0px);
+          transform: translate3d(0px, 60px, 0px);
         }
       }
     }
@@ -184,7 +186,7 @@
         width: 230px;
 
         &.dropdown-menu-end {
-          transform: translate3d(-69px, 60px, 0px);
+          transform: translate3d(0px, 60px, 0px);
         }
 
         li {

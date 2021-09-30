@@ -162,6 +162,9 @@
 .orange-bg {
   background-color: $orange;
 }
+.deep-blue-bg {
+  background-color: $deep-blue;
+}
 
 /* ======== Text Colors ========== */
 .text-primary {
@@ -204,9 +207,25 @@
   color: $orange !important;
 }
 
-/* ========= Theme Change Css =========== */
-.darkTheme {
-  .text-dark {
-    color: rgba($white, 0.7) !important;
-  }
+/* ========= Font Weight =========== */
+.fw-300 {
+  font-weight: 300;
+}
+.fw-400 {
+  font-weight: 400;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.fw-700 {
+  font-weight: 700;
+}
+.fw-800 {
+  font-weight: 800;
+}
+.fw-900 {
+  font-weight: 900;
 }

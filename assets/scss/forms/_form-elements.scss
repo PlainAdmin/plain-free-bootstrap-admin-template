@@ -171,7 +171,7 @@
       width: 100%;
       background: transparent;
       border: 1px solid $light-2;
-      border-radius: 4px;
+      border-radius: 10px;
       padding: 16px;
       padding-right: 38px;
       color: $gray;
@@ -187,6 +187,10 @@
 
       &.light-bg {
         background: rgba($light, 0.5);
+      }
+
+      &.radius-30 {
+        border-radius: 30px;
       }
     }
   }
@@ -246,7 +250,7 @@
       width: 100%;
       background: transparent;
       border: 1px solid $light-2;
-      border-radius: 4px;
+      border-radius: 10px;
       padding: 16px;
       padding-right: 38px;
       color: $gray;
@@ -313,7 +317,7 @@
       width: 100%;
       background: transparent;
       border: transparent;
-      border-radius: 4px;
+      border-radius: 10px;
       padding-right: 38px;
       color: $black;
       appearance: none;
@@ -412,9 +416,6 @@
         background-color: $success;
         border-color: $success;
       }
-      &:focus {
-        @include box-shadow(0px 0px 0px 0.25rem rgba($success, 0.25));
-      }
     }
   }
   &.radio-warning {
@@ -422,9 +423,6 @@
       &:checked {
         background-color: $warning;
         border-color: $warning;
-      }
-      &:focus {
-        @include box-shadow(0px 0px 0px 0.25rem rgba($warning, 0.25));
       }
     }
   }
@@ -434,12 +432,10 @@
         background-color: $danger;
         border-color: $danger;
       }
-      &:focus {
-        @include box-shadow(0px 0px 0px 0.25rem rgba($danger, 0.25));
-      }
     }
   }
 }
+
 .button-group {
   @media #{$xs} {
     .main-btn {

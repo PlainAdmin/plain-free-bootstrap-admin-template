@@ -71,3 +71,28 @@ h6,
   font-size: 14px;
   line-height: 22px;
 }
+
+/* ========== breadcrumb ============ */
+.breadcrumb-wrapper {
+  display: flex;
+  justify-content: flex-end;
+
+  @media #{$xs} {
+    justify-content: flex-start;
+  }
+
+  .breadcrumb {
+    li {
+      font-size: 14px;
+      color: $primary;
+
+      a {
+        color: $gray;
+
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+}

@@ -34,7 +34,6 @@
       &:checked {
         background-color: $primary;
         border-color: $primary;
-        @include box-shadow(0px 0px 0px 0.25rem rgba($primary, 0.25));
       }
     }
   }
@@ -105,12 +104,5 @@
     .dropdown-toggle::after {
       display: none;
     }
-  }
-}
-
-/* ========== Theme Change Css ============== */
-.darkTheme {
-  .single-notification {
-    border-color: $dark-2;
   }
 }

@@ -70,8 +70,22 @@
       font-size: 16px;
       font-weight: 600;
 
+      @media #{$laptop} {
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+
+      @media #{$lg} {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
       @media #{$xs} {
         width: 100%;
+      }
+
+      @media #{$sm} {
+        width: auto;
       }
     }
   }

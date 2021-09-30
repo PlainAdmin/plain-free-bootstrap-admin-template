@@ -14,7 +14,7 @@ body {
   font-style: normal;
   color: $gray;
   overflow-x: hidden;
-  background: #f5f5f5;
+  background: #e5e5e5;
 }
 
 * {
@@ -107,39 +107,15 @@ p {
   }
 }
 
-/* ========== breadcrumb ============ */
-.breadcrumb-wrapper {
-  display: flex;
-  justify-content: flex-end;
-
-  @media #{$xs} {
-    justify-content: flex-start;
-  }
-
-  .breadcrumb {
-    li {
-      font-size: 14px;
-      color: $primary;
-
-      a {
-        color: $gray;
-
-        &:hover {
-          color: $primary;
-        }
-      }
-    }
-  }
-}
-
 /* ========== cart style ========== */
 .card-style {
   background: $white;
-  border: 1px solid $light;
   box-sizing: border-box;
-  border-radius: 4px;
   padding: 25px 30px;
   position: relative;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0px 10px 20px rgba(200, 208, 216, 0.3);
+  border-radius: 10px;
 
   @media #{$xs} {
     padding: 20px;
@@ -173,11 +149,11 @@ p {
 }
 
 /* ======= Border Radius ========= */
-.radius-3 {
+.radius-4 {
   border-radius: 4px;
 }
 .radius-10 {
-  border-radius: 4px;
+  border-radius: 10px;
 }
 .radius-30 {
   border-radius: 30px;
@@ -211,4 +187,25 @@ p {
     color: $white;
     background: rgba($primary, 0.8);
   }
+}
+
+.form-control {
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.form-control.is-valid:focus,
+.was-validated .form-control:valid:focus,
+.form-control.is-invalid:focus,
+.was-validated .form-control:invalid:focus,
+.form-check-input.is-valid:focus,
+.was-validated .form-check-input:valid:focus,
+.form-check-input.is-invalid:focus,
+.was-validated .form-check-input:invalid:focus,
+.form-check-input:focus,
+.radio-style.radio-success .form-check-input:focus,
+.radio-style.radio-warning .form-check-input:focus,
+.radio-style.radio-danger .form-check-input:focus {
+  box-shadow: none;
 }

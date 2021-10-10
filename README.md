@@ -30,3 +30,8 @@ If you are looking for a high-quality free admin template that comes with all es
 - [Tables](https://plainadmin.com/docs/#tables)
 - [Credits](https://plainadmin.com/docs/#credits)
 
+### Update Logs - 1.1 :
+- Updated to Bootstrap 5.1.1
+- Fixed minor bugs
+- Enhanced the UI and Improved Typography
+

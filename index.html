@@ -285,6 +285,18 @@
           </li>
         </ul>
       </nav>
+      <div class="promo-box">
+        <h3>PlainAdmin Pro</h3>
+        <p>Get All Dashboards and 300+ UI Elements</p>
+        <a
+          href="https://plainadmin.com/pro"
+          target="_blank"
+          rel="nofollow"
+          class="main-btn primary-btn btn-hover"
+        >
+          Purchase Now
+        </a>
+      </div>
     </aside>
     <div class="overlay"></div>
     <!-- ======== sidebar-nav end =========== -->
@@ -1482,7 +1494,7 @@
         }),
         markers: markers,
         markerStyle: {
-          initial: { fill: "#2F80ED" },
+          initial: { fill: "#4A6CF7" },
           selected: { fill: "#ff5050" },
         },
         markerLabelStyle: {
@@ -1503,9 +1515,10 @@
         });
         calendarMini.render();
       });
+
       // =========== chart one start
-      var ctx1 = document.getElementById("Chart1").getContext("2d");
-      var chart1 = new Chart(ctx1, {
+      const ctx1 = document.getElementById("Chart1").getContext("2d");
+      const chart1 = new Chart(ctx1, {
         // The type of chart we want to create
         type: "line", // also try bar or other graph types
 
@@ -1530,12 +1543,12 @@
             {
               label: "",
               backgroundColor: "transparent",
-              borderColor: "#2F80ED",
+              borderColor: "#4A6CF7",
               data: [
-                600, 700, 750, 800, 760, 820, 690, 740, 720, 890, 776, 900,
+                600, 800, 750, 880, 940, 880, 900, 770, 920, 890, 976, 1100,
               ],
               pointBackgroundColor: "transparent",
-              pointHoverBackgroundColor: "#2F80ED",
+              pointHoverBackgroundColor: "#4A6CF7",
               pointBorderColor: "transparent",
               pointHoverBorderColor: "#fff",
               pointHoverBorderWidth: 5,
@@ -1547,6 +1560,7 @@
         },
 
         // Configuration options
+        defaultFontFamily: "Inter",
         options: {
           tooltips: {
             callbacks: {
@@ -1558,9 +1572,11 @@
             },
             intersect: false,
             backgroundColor: "#f9f9f9",
+            titleFontFamily: "Inter",
             titleFontColor: "#8F92A1",
             titleFontColor: "#8F92A1",
             titleFontSize: 12,
+            bodyFontFamily: "Inter",
             bodyFontColor: "#171717",
             bodyFontStyle: "bold",
             bodyFontSize: 16,
@@ -1609,11 +1625,12 @@
           },
         },
       });
+
       // =========== chart one end
 
       // =========== chart two start
-      var ctx2 = document.getElementById("Chart2").getContext("2d");
-      var chart2 = new Chart(ctx2, {
+      const ctx2 = document.getElementById("Chart2").getContext("2d");
+      const chart2 = new Chart(ctx2, {
         // The type of chart we want to create
         type: "bar", // also try bar or other graph types
         // The data for our dataset
@@ -1636,21 +1653,12 @@
           datasets: [
             {
               label: "",
-              backgroundColor: "#2F80ED",
+              backgroundColor: "#4A6CF7",
               barThickness: 6,
               maxBarThickness: 8,
               data: [
                 600, 700, 1000, 700, 650, 800, 690, 740, 720, 1120, 876, 900,
               ],
-              borderRadius: 100,
-              pointBackgroundColor: "#F3F6F8",
-              pointHoverBackgroundColor: "#5243AA",
-              pointBorderColor: "#F3F6F8",
-              pointHoverBorderColor: "#fff",
-              pointHoverBorderWidth: 5,
-              pointBorderWidth: 5,
-              pointRadius: 8,
-              pointHoverRadius: 8,
             },
           ],
         },
@@ -1722,8 +1730,8 @@
       // =========== chart two end
 
       // =========== chart three start
-      var ctx3 = document.getElementById("Chart3").getContext("2d");
-      var chart3 = new Chart(ctx3, {
+      const ctx3 = document.getElementById("Chart3").getContext("2d");
+      const chart3 = new Chart(ctx3, {
         // The type of chart we want to create
         type: "line", // also try bar or other graph types
 
@@ -1748,10 +1756,10 @@
             {
               label: "Revenue",
               backgroundColor: "transparent",
-              borderColor: "#5243AA",
+              borderColor: "#4a6cf7",
               data: [80, 120, 110, 100, 130, 150, 115, 145, 140, 130, 160, 210],
               pointBackgroundColor: "transparent",
-              pointHoverBackgroundColor: "#5243AA",
+              pointHoverBackgroundColor: "#4a6cf7",
               pointBorderColor: "transparent",
               pointHoverBorderColor: "#fff",
               pointHoverBorderWidth: 3,
@@ -1762,12 +1770,12 @@
             {
               label: "Profit",
               backgroundColor: "transparent",
-              borderColor: "#686EFF",
+              borderColor: "#9b51e0",
               data: [
                 120, 160, 150, 140, 165, 210, 135, 155, 170, 140, 130, 200,
               ],
               pointBackgroundColor: "transparent",
-              pointHoverBackgroundColor: "#686EFF",
+              pointHoverBackgroundColor: "#9b51e0",
               pointBorderColor: "transparent",
               pointHoverBorderColor: "#fff",
               pointHoverBorderWidth: 3,
@@ -1778,10 +1786,10 @@
             {
               label: "Order",
               backgroundColor: "transparent",
-              borderColor: "#FF8730",
+              borderColor: "#f2994a",
               data: [180, 110, 140, 135, 100, 90, 145, 115, 100, 110, 115, 150],
               pointBackgroundColor: "transparent",
-              pointHoverBackgroundColor: "#FF8730",
+              pointHoverBackgroundColor: "#f2994a",
               pointBorderColor: "transparent",
               pointHoverBorderColor: "#fff",
               pointHoverBorderWidth: 3,
@@ -1795,19 +1803,13 @@
         // Configuration options
         options: {
           tooltips: {
-            callbacks: {
-              labelColor: function (tooltipItem, chart) {
-                return {
-                  backgroundColor: "rgba(104, 110, 255, .0)",
-                };
-              },
-            },
             intersect: false,
             backgroundColor: "#fbfbfb",
             titleFontColor: "#8F92A1",
             titleFontSize: 16,
             titleFontFamily: "Inter",
             titleFontStyle: "400",
+            bodyFontFamily: "Inter",
             bodyFontColor: "#171717",
             bodyFontSize: 16,
             multiKeyBackground: "transparent",
@@ -1864,8 +1866,8 @@
       // =========== chart three end
 
       // ================== chart four start
-      var ctx4 = document.getElementById("Chart4").getContext("2d");
-      var chart4 = new Chart(ctx4, {
+      const ctx4 = document.getElementById("Chart4").getContext("2d");
+      const chart4 = new Chart(ctx4, {
         // The type of chart we want to create
         type: "bar", // also try bar or other graph types
         // The data for our dataset
@@ -1875,33 +1877,17 @@
           datasets: [
             {
               label: "",
-              backgroundColor: "#2F80ED",
+              backgroundColor: "#4A6CF7",
               barThickness: "flex",
               maxBarThickness: 8,
               data: [600, 700, 1000, 700, 650, 800],
-              pointBackgroundColor: "#F3F6F8",
-              pointHoverBackgroundColor: "#5243AA",
-              pointBorderColor: "#F3F6F8",
-              pointHoverBorderColor: "#fff",
-              pointHoverBorderWidth: 5,
-              pointBorderWidth: 5,
-              pointRadius: 8,
-              pointHoverRadius: 8,
             },
             {
               label: "",
-              backgroundColor: "#EB5757",
+              backgroundColor: "#d50100",
               barThickness: "flex",
               maxBarThickness: 8,
               data: [690, 740, 720, 1120, 876, 900],
-              pointBackgroundColor: "#F3F6F8",
-              pointHoverBackgroundColor: "#5243AA",
-              pointBorderColor: "#F3F6F8",
-              pointHoverBorderColor: "#fff",
-              pointHoverBorderWidth: 5,
-              pointBorderWidth: 5,
-              pointRadius: 8,
-              pointHoverRadius: 8,
             },
           ],
         },

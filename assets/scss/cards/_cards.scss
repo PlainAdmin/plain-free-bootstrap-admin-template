@@ -181,11 +181,11 @@
 
   &.icon-card-3 {
     display: block;
-    padding: 12px;
+    padding: 0px;
 
     .card-content {
       display: flex;
-      padding: 12px;
+      padding: 20px;
       padding-bottom: 0;
     }
   }
@@ -245,6 +245,29 @@
     &.orange {
       background: rgba($orange, 0.1);
       color: $orange;
+    }
+
+    &.opacity-100 {
+      &.purple {
+        background: $purple;
+        color: $white;
+      }
+      &.success {
+        background: $success;
+        color: $white;
+      }
+      &.primary {
+        background: $primary;
+        color: $white;
+      }
+      &.orange {
+        background: $orange;
+        color: $white;
+      }
+      &.deep-blue {
+        background: $deep-blue;
+        color: $white;
+      }
     }
   }
 }

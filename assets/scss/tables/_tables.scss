@@ -1,6 +1,9 @@
 /* =========== tables css =========== */
 
 .table {
+  border-collapse: inherit;
+  border-spacing: 0px;
+
   & > :not(caption) > * > * {
     padding: 15px 0;
     border-bottom-color: $light;
@@ -40,6 +43,7 @@
 
     p {
       font-size: 14px;
+      line-height: 1.5;
       color: $gray;
 
       a {

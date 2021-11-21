@@ -88,5 +88,11 @@
         width: auto;
       }
     }
+
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }

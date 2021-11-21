@@ -9,6 +9,7 @@
       border-radius: 50%;
       margin-right: 20px;
       position: relative;
+      z-index: 1;
 
       img {
         width: 100%;
@@ -25,12 +26,24 @@
         border: 2px solid $white;
         @include flex-center;
         border-radius: 50%;
+        cursor: pointer;
+        z-index: 99;
+
+        &:hover {
+          opacity: 0.9;
+        }
 
         input {
           opacity: 0;
           position: absolute;
           width: 100%;
           height: 100%;
+          cursor: pointer;
+          z-index: 99;
+        }
+        label {
+          cursor: pointer;
+          z-index: 99;
         }
       }
     }

@@ -22,9 +22,11 @@
     padding: 16px;
     color: $gray;
     resize: none;
+    transition: all 0.3s;
 
     &:focus {
       border-color: $primary;
+      background: $white;
     }
 
     &[type="date"],
@@ -56,9 +58,11 @@
     padding: 16px;
     color: $gray;
     resize: none;
+    transition: all 0.3s;
 
     &:focus {
       border-color: $primary;
+      background: $white;
     }
 
     &[type="date"],
@@ -106,9 +110,11 @@
     padding-left: 45px;
     color: $gray;
     resize: none;
+    transition: all 0.3s;
 
     &:focus {
       border-color: $primary;
+      background: $white;
     }
   }
 
@@ -187,6 +193,9 @@
 
       &.light-bg {
         background: rgba($light, 0.5);
+      }
+      &.light-bg:focus {
+        background: $white;
       }
 
       &.radius-30 {
@@ -267,6 +276,10 @@
       &.light-bg {
         background: rgba($light, 0.5);
       }
+      &.light-bg:focus {
+        background: $white;
+      }
+
       &.select-sm {
         padding-top: 8px;
         padding-bottom: 8px;
@@ -345,12 +358,15 @@
     width: 50px;
     height: 28px;
     margin-left: -60px;
+    cursor: pointer;
   }
 
   label {
     margin-top: 6px;
     font-size: 14px;
     color: $dark;
+    cursor: pointer;
+    user-select: none;
   }
 }
 
@@ -364,9 +380,19 @@
     height: 28px;
     border-radius: 4px;
     margin-left: -40px;
+    cursor: pointer;
+
+    &:disabled {
+      cursor: auto;
+    }
+  }
+  .form-check-input:disabled ~ label {
+    cursor: auto;
   }
   label {
     margin-top: 6px;
+    cursor: pointer;
+    user-select: none;
   }
 
   &.checkbox-success {
@@ -405,9 +431,19 @@
     height: 28px;
     border-radius: 50%;
     margin-left: -40px;
+    cursor: pointer;
+
+    &:disabled {
+      cursor: auto;
+    }
+  }
+  .form-check-input:disabled ~ label {
+    cursor: auto;
   }
   label {
     margin-top: 6px;
+    cursor: pointer;
+    user-select: none;
   }
 
   &.radio-success {
@@ -439,6 +475,114 @@
 .button-group {
   @media #{$xs} {
     .main-btn {
+      width: 100%;
+    }
+  }
+}
+
+.buy-sell-form {
+  .input-group {
+    display: flex;
+
+    input {
+      width: 60%;
+      background: transparent;
+      border: 1px solid #e2e8f0;
+      border-radius: 4px;
+      padding: 8px 16px;
+      font-size: 14px;
+      color: $gray;
+
+      &:focus {
+        border-color: $primary;
+      }
+    }
+
+    .select-style-1 {
+      width: 40%;
+
+      .select-position {
+        &::after {
+          width: 8px;
+          height: 8px;
+        }
+      }
+    }
+
+    select {
+      border: 1px solid #e2e8f0;
+      border-radius: 0px 4px 4px 0px;
+      padding: 8px 16px;
+      padding-right: 24px;
+      font-size: 14px;
+      color: $gray;
+    }
+  }
+
+  .buy-sell-btn {
+    .main-btn {
+      display: block;
+      width: 100%;
+      font-weight: 500;
+
+      &:hover {
+        box-shadow: $shadow-one;
+      }
+
+      &.success-btn {
+        background: #08c18d;
+      }
+
+      &.danger-btn {
+        background: #eb5757;
+      }
+    }
+  }
+
+  .field-group-2 {
+    label {
+      font-size: 12px;
+    }
+
+    .input-group {
+      input {
+        font-size: 12px;
+        width: 70%;
+      }
+
+      span {
+        font-size: 12px;
+        padding: 8px 16px;
+        width: 30%;
+        background: #e2e8f0;
+        text-align: center;
+        border-radius: 0px 4px 4px 0px;
+        border: 1px solid #e2e8f0;
+      }
+    }
+  }
+
+  .input-group-2 {
+    label {
+      font-size: 12px;
+      color: $gray;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .select-position {
+      &::after {
+        width: 8px;
+        height: 8px;
+      }
+    }
+
+    select {
+      padding: 8px 12px;
+      font-size: 12px;
+      color: $gray;
+      border: 1px solid #e2e8f0;
+      border-radius: 4px;
       width: 100%;
     }
   }

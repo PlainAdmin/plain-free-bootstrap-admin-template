@@ -199,36 +199,6 @@
   }
 }
 
-.sidebar-nav-wrapper {
-  &.style-2 {
-    .sidebar-nav {
-      ul {
-        .nav-item {
-          &.nav-item-has-children {
-            ul {
-              li {
-                a {
-                  &.active,
-                  &:hover {
-                    color: $white;
-                    border-color: $primary;
-                    background: $primary;
-
-                    span.pro-badge {
-                      background: $white;
-                      color: $primary;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
 .overlay {
   position: fixed;
   top: 0;
@@ -319,92 +289,28 @@
   }
 }
 
-/* ====== Theme Change CSS ====== */
-.darkTheme {
-  .sidebar-nav-wrapper {
-    background: $dark;
+.promo-box {
+  box-shadow: 0px 10px 20px rgba(200, 208, 216, 0.3);
+  padding: 24px 16px;
+  text-align: center;
+  max-width: 210px;
+  margin: 0 auto;
+  margin-top: 32px;
+  border-radius: 4px;
 
-    .sidebar-nav {
-      ul {
-        .nav-item {
-          &.nav-item-has-children {
-            & > a {
-              color: $white;
+  h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  p {
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
 
-              &.collapsed {
-                color: $gray-2;
-              }
-            }
-
-            ul {
-              li {
-                a {
-                  &.active,
-                  &:hover {
-                    color: $white;
-                    border-color: rgba($white, 0.15);
-                    background: rgba($white, 0.1);
-                  }
-                }
-              }
-            }
-          }
-
-          a {
-            color: $gray-2;
-          }
-          &.active,
-          &:hover {
-            & > a,
-            & > a.collapsed {
-              color: $white;
-            }
-          }
-        }
-      }
-    }
-
-    &.style-2 {
-      background: $dark-3;
-      .sidebar-nav {
-        ul {
-          .nav-item {
-            &.nav-item-has-children {
-              & > a {
-                color: $white;
-
-                &.collapsed {
-                  color: $gray-2;
-                }
-              }
-
-              ul {
-                li {
-                  a {
-                    &.active,
-                    &:hover {
-                      color: $white;
-                      border-color: $primary;
-                      background: $primary;
-                    }
-                  }
-                }
-              }
-            }
-
-            a {
-              color: $gray-2;
-            }
-            &.active,
-            &:hover {
-              & > a,
-              & > a.collapsed {
-                color: $white;
-              }
-            }
-          }
-        }
-      }
-    }
+  .main-btn {
+    padding: 12px;
+    width: 100%;
   }
 }

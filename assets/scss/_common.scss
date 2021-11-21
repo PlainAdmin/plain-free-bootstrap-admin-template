@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: $font;
+  font-family: $font !important;
   font-weight: normal;
   font-style: normal;
   color: $gray;
@@ -121,6 +121,23 @@ p {
     padding: 20px;
   }
 
+  .jvm-zoom-btn {
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $black-10;
+    right: 30px;
+    bottom: 30px;
+    cursor: pointer;
+
+    &.jvm-zoomin {
+      bottom: 70px;
+    }
+  }
+
   .dropdown-toggle {
     border: none;
     background: none;
@@ -208,4 +225,8 @@ p {
 .radio-style.radio-warning .form-check-input:focus,
 .radio-style.radio-danger .form-check-input:focus {
   box-shadow: none;
+}
+
+.hover-underline:hover {
+  text-decoration: underline;
 }

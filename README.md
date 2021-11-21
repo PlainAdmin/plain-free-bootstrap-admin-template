@@ -39,3 +39,10 @@ If you are looking for a high-quality free admin template that comes with all es
 - Fixed minor bugs
 - Enhanced the UI and Improved Typography
 
+### Update Logs - 1.1.1 :
+- Updated to v5.1.3 (Latest)
+- Fixed minor bugs
+- Changed primary color
+- Multiple sidebar variations
+- Imprved UX
+- Optimized codebase

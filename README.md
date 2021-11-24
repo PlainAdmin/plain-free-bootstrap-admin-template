@@ -11,6 +11,8 @@ PlainAdmin is a free and open-source Bootstrap 5 admin and dashboard template th
 
 ### [⬇️ Download Now](https://plainadmin.com/download)
 
+### [📄 Documentation/Installation](https://plainadmin.com/docs/)
+
 ### [⚡ PRO Version](https://plainadmin.com/pro)
 
 
@@ -44,5 +46,5 @@ If you are looking for a high-quality free admin template that comes with all es
 - Fixed minor bugs
 - Changed primary color
 - Multiple sidebar variations
-- Imprved UX
+- Improved UX
 - Optimized codebase

@@ -2,7 +2,7 @@
 const gulp = require('gulp');
 const { src, dest, watch, series } = require('gulp');
 
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('node-sass'));
 
 const browserSync = require('browser-sync').create();
 

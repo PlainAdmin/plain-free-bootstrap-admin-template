@@ -37,8 +37,8 @@ If you are looking for a high-quality free admin template that comes with all es
 - [Credits](https://plainadmin.com/docs/#credits)
 
 ### Update Logs - 1.2 :
-- Added Kanban (App)
-- Added File Manager (App)
+- Added Kanban (App) [PRO]
+- Added File Manager (App) [PRO]
 - Dependencies updated
 - FullCalender updated
 

@@ -58,11 +58,11 @@
             }
 
             &::after {
-              content: "\ea5e";
+              content: "\eb11";
               font: normal normal normal 1em/1 "LineIcons";
               position: absolute;
               right: 25px;
-              top: 16px;
+              top: 18px;
               font-size: 12px;
               @include transition(0.3s);
               @include transform(rotate(180deg));

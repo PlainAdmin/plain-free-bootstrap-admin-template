@@ -20,6 +20,8 @@ It comes with a minimal UI design that suits almost any kind of web project and 
 
 PlainAdmin built with vanilla Javascript (no jQuery), Bootstrap 5 and the simplest possible way to make it easy to maintain and easy to port your back-end projects.
 
+### [👉 Check out our Admin Template for Tailwind CSS](https://tailadmin.com)
+
 If you are looking for a high-quality free admin template that comes with all essential dashboard components and features then, PlainAdmin is the perfect choice for you.
 
 ## [📄 Documentation](https://plainadmin.com/docs/)

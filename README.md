@@ -11,12 +11,16 @@ PlainAdmin is a free and open-source Bootstrap 5 admin and dashboard template th
 
 ### [⬇️ Download Now](https://plainadmin.com/download)
 
+### [📄 Documentation/Installation](https://plainadmin.com/docs/)
+
 ### [⚡ PRO Version](https://plainadmin.com/pro)
 
 
 It comes with a minimal UI design that suits almost any kind of web project and offers the best possible user experience. PlainAdmin comes with SCSS files, organized codebase, gulp support for efficient workflow, a rich documentation, and everything that you can expect from a modern admin template.
 
 PlainAdmin built with vanilla Javascript (no jQuery), Bootstrap 5 and the simplest possible way to make it easy to maintain and easy to port your back-end projects.
+
+### [👉 Check out our Admin Template for Tailwind CSS](https://tailadmin.com)
 
 If you are looking for a high-quality free admin template that comes with all essential dashboard components and features then, PlainAdmin is the perfect choice for you.
 
@@ -34,15 +38,25 @@ If you are looking for a high-quality free admin template that comes with all es
 - [Tables](https://plainadmin.com/docs/#tables)
 - [Credits](https://plainadmin.com/docs/#credits)
 
-### Update Logs - 1.1 :
-- Updated to Bootstrap 5.1.1
-- Fixed minor bugs
-- Enhanced the UI and Improved Typography
+### Update Logs - 1.2 :
+- Added Kanban (App) [PRO]
+- Added File Manager (App) [PRO]
+- Dependencies updated
+- FullCalender updated
+
+### Update Logs - 1.1.2 :
+- FullCalender updated
+- Dependencies updates
 
 ### Update Logs - 1.1.1 :
 - Updated to v5.1.3 (Latest)
 - Fixed minor bugs
 - Changed primary color
 - Multiple sidebar variations
-- Imprved UX
+- Improved UX
 - Optimized codebase
+
+### Update Logs - 1.1 :
+- Updated to Bootstrap 5.1.1
+- Fixed minor bugs
+- Enhanced the UI and Improved Typography

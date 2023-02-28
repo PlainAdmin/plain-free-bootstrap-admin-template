@@ -8,12 +8,12 @@ Version: 4.0
 
 @font-face {
   font-family: 'lineicons';
-  src: url('../fonts/lineicons.eot');
-  src: url('../fonts/lineicons.eot') format('embedded-opentype'),
-       url('../fonts/lineicons.woff2') format('woff2'),
-       url('../fonts/lineicons.woff') format('woff'),
-       url('../fonts/lineicons.ttf') format('truetype'),
-       url('../fonts/lineicons.svg') format('svg');
+  src: url('../fonts/LineIcons.eot');
+  src: url('../fonts/LineIcons.eot') format('embedded-opentype'),
+       url('../fonts/LineIcons.woff2') format('woff2'),
+       url('../fonts/LineIcons.woff') format('woff'),
+       url('../fonts/LineIcons.ttf') format('truetype'),
+       url('../fonts/LineIcons.svg') format('svg');
 }
 
 /* base class */

@@ -144,6 +144,9 @@
 .light-bg {
   background-color: $light;
 }
+.blue-light-bg {
+  background-color: $blue-light;
+}
 .active-bg {
   background-color: $active;
 }
@@ -165,6 +168,12 @@
 .deep-blue-bg {
   background-color: $deep-blue;
 }
+.doc-bg {
+  background-color: $doc;
+}
+.photo-bg {
+  background-color: $photo;
+}
 
 /* ======== Text Colors ========== */
 .text-primary {
@@ -176,8 +185,17 @@
 .text-success {
   color: $success !important;
 }
+.text-success-2 {
+  color: $success-2 !important;
+}
 .text-danger {
   color: $danger !important;
+}
+.text-danger-2 {
+  color: $danger-2 !important;
+}
+.text-danger-light {
+  color: $danger-light !important;
 }
 .text-warning {
   color: $warning !important;
@@ -205,6 +223,15 @@
 }
 .text-orange {
   color: $orange !important;
+}
+.text-purple {
+  color: $purple !important;
+}
+.text-doc {
+  color: $doc !important;
+}
+.text-photo {
+  color: $photo !important;
 }
 
 /* ========= Font Weight =========== */

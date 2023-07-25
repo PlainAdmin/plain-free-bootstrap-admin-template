@@ -2,7 +2,10 @@
 
 /* buttons base styles */
 .main-btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -11,16 +14,77 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 24px;
-  border-radius: 4px;
+  border-radius: 3px;
   cursor: pointer;
   z-index: 5;
   transition: all 0.4s ease-in-out;
   border: 1px solid transparent;
   overflow: hidden;
 
+  i {
+    font-size: 17px;
+  }
+
+  svg {
+    fill: currentColor;
+  }
+
   &:hover {
     color: inherit;
   }
+}
+
+.group-btn {
+  display: inline-flex;
+  border: 1px solid $light-3;
+  border-radius: 3px;
+
+  &.square-btn {
+    .main-btn {
+    &:first-child {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    &:last-child {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    }
+  }
+
+  &.rounded-full {
+    .main-btn {
+    &:first-child {
+      border-top-left-radius: 30px;
+      border-bottom-left-radius: 30px;
+    }
+
+    &:last-child {
+      border-top-right-radius: 30px;
+      border-bottom-right-radius: 30px;
+    }
+    }
+  }
+  
+  .main-btn {
+    border-radius: 0;
+
+    &:first-child {
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+    }
+
+    &:last-child {
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+    }
+
+    &:not(&:last-child) {
+      border-right: 1px solid $light-3;
+    }
+  }
+  
 }
 
 .btn-sm {
@@ -54,6 +118,35 @@
     }
   }
 }
+
+/* Dropdown buttons */
+.base-dropdown-btn {
+  .main-btn {
+    padding: 8px 15px;
+
+    svg {
+      fill: currentColor;
+    }
+  }
+
+  .dropdown-menu {
+    box-shadow: $shadow-three;
+    border-radius: 3px;
+    border: none;
+  }
+
+  .dropdown-item {
+    padding: 8px 15px;
+    color: $gray;
+    font-weight: 500;
+
+    &:hover {
+      color: $gray !important;
+      background: #f5f8fc;
+    }
+  }
+}
+
 /* primary buttons */
 .primary-btn {
   background: $primary;
@@ -71,6 +164,26 @@
   &:hover {
     color: $white;
     background: $primary;
+  }
+}
+.primary-btn-light {
+  background: rgba($primary, 0.12);
+  color: $primary;
+
+  &:hover {
+    color: $primary;
+  }
+}
+.primary-btn-group {
+  background: transparent;
+  border: 1px solid transparent;
+  color: $primary;
+
+  &.active,
+  &:hover {
+    color: $white;
+    background: $primary;
+    border-color: $primary !important;
   }
 }
 
@@ -93,6 +206,26 @@
     background: $secondary;
   }
 }
+.secondary-btn-light {
+  background: rgba($secondary, 0.12);
+  color: $secondary;
+
+  &:hover {
+    color: $secondary;
+  }
+}
+.secondary-btn-group {
+  background: transparent;
+  border: 1px solid transparent;
+  color: $secondary;
+
+  &.active,
+  &:hover {
+    color: $white;
+    background: $secondary;
+    border-color: $secondary !important;
+  }
+}
 
 /* success buttons */
 .success-btn {
@@ -111,6 +244,26 @@
   &:hover {
     color: $white;
     background: $success;
+  }
+}
+.success-btn-light {
+  background: rgba($success, 0.12);
+  color: $success;
+
+  &:hover {
+    color: $success;
+  }
+}
+.success-btn-group {
+  background: transparent;
+  border: 1px solid transparent;
+  color: $success;
+
+  &.active,
+  &:hover {
+    color: $white;
+    background: $success;
+    border-color: $success !important;
   }
 }
 
@@ -133,6 +286,26 @@
     background: $danger;
   }
 }
+.danger-btn-light {
+  background: rgba($danger, 0.12);
+  color: $danger;
+
+  &:hover {
+    color: $danger;
+  }
+}
+.danger-btn-group {
+  background: transparent;
+  border: 1px solid transparent;
+  color: $danger;
+
+  &.active,
+  &:hover {
+    color: $white;
+    background: $danger;
+    border-color: $danger !important;
+  }
+}
 
 /* warning buttons */
 .warning-btn {
@@ -151,6 +324,26 @@
   &:hover {
     color: $white;
     background: $warning;
+  }
+}
+.warning-btn-light {
+  background: rgba($warning, 0.12);
+  color: $warning;
+
+  &:hover {
+    color: $warning;
+  }
+}
+.warning-btn-group {
+  background: transparent;
+  border: 1px solid transparent;
+  color: $warning;
+
+  &.active,
+  &:hover {
+    color: $white;
+    background: $warning;
+    border-color: $warning !important;
   }
 }
 
@@ -173,6 +366,26 @@
     background: $info;
   }
 }
+.info-btn-light {
+  background: rgba($info, 0.12);
+  color: $info;
+
+  &:hover {
+    color: $info;
+  }
+}
+.info-btn-group {
+  background: transparent;
+  border: 1px solid transparent;
+  color: $info;
+
+  &.active,
+  &:hover {
+    color: $white;
+    background: $info;
+    border-color: $info !important;
+  }
+}
 
 /* dark buttons */
 .dark-btn {
@@ -193,10 +406,30 @@
     background: $dark;
   }
 }
+.dark-btn-light {
+  background: rgba($dark, 0.12);
+  color: $dark;
+
+  &:hover {
+    color: $dark;
+  }
+}
+.dark-btn-group {
+  background: transparent;
+  border: 1px solid transparent;
+  color: $dark;
+
+  &.active,
+  &:hover {
+    color: $white;
+    background: $dark;
+    border-color: $dark !important;
+  }
+}
 
 /* light buttons */
 .light-btn {
-  background: $light;
+  background: $light-3;
   color: $dark;
 
   &:hover {
@@ -206,11 +439,31 @@
 .light-btn-outline {
   background: transparent;
   color: $dark;
-  border-color: $light;
+  border-color: $light-3;
 
   &:hover {
     color: $dark;
-    background: $light;
+    background: $light-3;
+  }
+}
+.light-btn-light {
+  background: rgba($light-3, 0.50);
+  color: $dark;
+
+  &:hover {
+    color: $dark;
+  }
+}
+.light-btn-group {
+  background: transparent;
+  border: 1px solid transparent;
+  color: $black;
+
+  &.active,
+  &:hover {
+    color: $black;
+    background: $light-3;
+    border-color: $light-3 !important;
   }
 }
 
@@ -233,24 +486,64 @@
     background: $active;
   }
 }
-
-/* deactive buttons */
-.deactive-btn {
-  background: $deactive;
+.active-btn-light {
+  background: rgba($active, 0.12);
   color: $active;
 
   &:hover {
     color: $active;
   }
 }
+.active-btn-group {
+  background: transparent;
+  border: 1px solid transparent;
+  color: $active;
+
+  &.active,
+  &:hover {
+    color: $white;
+    background: $active;
+    border-color: $active !important;
+  }
+}
+
+/* deactive buttons */
+.deactive-btn {
+  background: $deactive;
+  color: $gray-3;
+
+  &:hover {
+    color: $gray-3;
+  }
+}
 .deactive-btn-outline {
   background: transparent;
-  color: $active;
+  color: $gray-3;
   border-color: $deactive;
 
   &:hover {
-    color: $active;
+    color: $gray-3;
     background: $deactive;
+  }
+}
+.deactive-btn-light {
+  background: rgba($deactive, 1);
+  color: $gray-3;
+
+  &:hover {
+    color: $gray-3;
+  }
+}
+.deactive-btn-group {
+  background: transparent;
+  border: 1px solid transparent;
+  color: $sidebar-text;
+
+  &.active,
+  &:hover {
+    color: $sidebar-text;
+    background: #CBE1FF;
+    border-color: #CBE1FF !important;
   }
 }
 

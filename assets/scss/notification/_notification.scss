@@ -106,3 +106,10 @@
     }
   }
 }
+
+/* ========== Theme Change Css ============== */
+.darkTheme {
+  .single-notification {
+    border-color: $dark-2;
+  }
+}

@@ -1,4 +1,4 @@
-/* =========== Sidebar css =========== */
+ /* =========== Sidebar css =========== */
 .sidebar-nav-wrapper {
   background: $white;
   width: 250px;
@@ -9,8 +9,8 @@
   overflow-x: hidden;
   top: 0;
   left: 0;
-  z-index: 99;
-  box-shadow: 0px 0px 30px rgba(200, 208, 216, 0.3);
+  z-index: 999;
+  box-shadow: 0px 0px 30px 0px rgba(200, 208, 216, 0.30);
   @include transition(0.3s);
   @include transform(translateX(0));
 
@@ -27,9 +27,9 @@
   }
 
   .navbar-logo {
-    text-align: center;
     padding: 0 25px;
     margin-bottom: 30px;
+    margin-top: 11px;
   }
 
   .sidebar-nav {
@@ -39,37 +39,36 @@
 
       hr {
         height: 1px;
-        background: #e2e2e2;
+        background: #E9EEF1;
       }
     }
 
     ul {
       .nav-item {
         position: relative;
-        margin: 5px 0px;
 
         &.nav-item-has-children {
           & > a {
             color: $dark;
 
-            &::before {
-              opacity: 1;
-              visibility: visible;
-            }
+            &:not(.collapsed){
+              .icon {
+                color: $primary;
+              }
+            } 
 
             &::after {
-              content: "\eb11";
-              font: normal normal normal 1em/1 "LineIcons";
+              content: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.34306 7.76387L9.02356 3.8071C9.32923 3.47851 9.11273 2.91666 8.68048 2.91666L1.31947 2.91666C0.887218 2.91666 0.670743 3.47851 0.976393 3.8071L4.6569 7.76387C4.8464 7.96758 5.15356 7.96758 5.34306 7.76387Z' fill='%239AA4CA'/%3E%3C/svg%3E%0A");
               position: absolute;
               right: 25px;
-              top: 18px;
+              top: 11px;
               font-size: 12px;
               @include transition(0.3s);
               @include transform(rotate(180deg));
             }
 
             &.collapsed {
-              color: $gray;
+              color: $sidebar-text;
 
               &::before {
                 opacity: 0;
@@ -83,9 +82,9 @@
           }
 
           ul {
-            padding: 0px 15px;
+            padding: 10px 24px 40px 57px;
             li {
-              margin-bottom: 10px;
+              margin-bottom: 12px;
 
               &:last-child {
                 margin-bottom: 0px;
@@ -93,18 +92,14 @@
 
               a {
                 font-size: 14px;
-                font-weight: 400;
-                border-radius: 6px;
-                padding: 8px 15px;
+                font-weight: 500;
+                padding: 0;
                 display: flex;
                 align-items: center;
-                border: 1px solid transparent;
 
                 &.active,
                 &:hover {
-                  color: $primary;
-                  border-color: rgba($primary, 0.15);
-                  background: rgba($primary, 0.1);
+                  color: $dark;
                 }
 
                 i {
@@ -122,9 +117,11 @@
                 span.pro-badge {
                   background: $primary;
                   color: $white;
-                  padding: 1px 6px;
-                  border-radius: 4px;
+                  padding: 2.5px 7px;
+                  border-radius: 30px;
                   font-size: 10px;
+                  line-height: 13px;
+                  font-weight: 600;
                   margin-left: 10px;
                 }
               }
@@ -135,50 +132,42 @@
         a {
           display: flex;
           align-items: center;
-          color: $gray;
-          font-size: 16px;
+          color: $sidebar-text;
+          font-size: 14px;
           font-weight: 500;
           width: 100%;
           position: relative;
           z-index: 1;
-          padding: 10px 25px;
-
-          &::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0;
-            height: 100%;
-            width: 4px;
-            background: $primary;
-            border-radius: 0 3px 3px 0px;
-            opacity: 0;
-            visibility: hidden;
-            @include transition(0.3s);
-          }
+          padding: 7px 25px;
 
           span.text {
             display: flex;
             align-items: center;
             justify-content: space-between;
             width: 100%;
+            @include transition(0.3s);
           }
 
           span.pro-badge {
             background: $primary;
             color: $white;
-            padding: 1px 6px;
-            border-radius: 4px;
+            padding: 2.5px 7px;
+            border-radius: 30px;
             font-size: 10px;
+            line-height: 13px;
+            font-weight: 600;
             margin-left: 10px;
           }
 
           .icon {
             margin-right: 12px;
+            margin-top: -4px;
             font-size: 18px;
+            @include transition(0.3s);
 
             svg {
               fill: currentColor;
+              @include transition(0.3s);
             }
           }
         }
@@ -188,9 +177,38 @@
           & > a.collapsed {
             color: $dark;
 
-            &::before {
-              opacity: 1;
-              visibility: visible;
+            .icon {
+              color: $primary;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.sidebar-nav-wrapper {
+  &.style-2 {
+    .sidebar-nav {
+      ul {
+        .nav-item {
+          &.nav-item-has-children {
+            ul {
+              li {
+                a {
+                  &.active,
+                  &:hover {
+                    color: $white;
+                    border-color: $primary;
+                    background: $primary;
+
+                    span.pro-badge {
+                      background: $white;
+                      color: $primary;
+                    }
+                  }
+                }
+              }
             }
           }
         }
@@ -290,27 +308,40 @@
 }
 
 .promo-box {
-  box-shadow: 0px 10px 20px rgba(200, 208, 216, 0.3);
-  padding: 24px 16px;
+  background: #F5F8FC;
+  padding: 15px 18px;
   text-align: center;
   max-width: 210px;
   margin: 0 auto;
-  margin-top: 32px;
-  border-radius: 4px;
+  margin-top: 200px;
+  border-radius: 14px;
+  
+  .promo-icon {
+    max-width: 82px;
+    width: 100%;
+    height: 82px;
+    border-radius: 50%;
+    margin: -58px auto 12px;
+    border: 5px solid $white;
+  }
 
   h3 {
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 22px;
     font-weight: 600;
-    margin-bottom: 4px;
+    margin-bottom: 7px;
   }
   p {
-    font-size: 12px;
+    font-size: 10px;
+    font-weight: 500;
     line-height: 1.5;
-    margin-bottom: 16px;
+    margin-bottom: 15px;
   }
 
   .main-btn {
-    padding: 12px;
+    border-radius: 43px;
+    padding: 7px 12px;
     width: 100%;
+    justify-content: center;
   }
 }

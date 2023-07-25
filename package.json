@@ -1,15 +1,15 @@
 {
   "name": "plainadmin",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "main": "index.html",
   "repository": "https://github.com/PlainAdmin/plainadmin.git",
   "author": "plainadmin team",
   "license": "MIT",
-  "dependencies": {
-    "browser-sync": "^2.26.14",
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
     "gulp": "^4.0.2",
     "gulp-minify": "^3.1.0",
     "gulp-sass": "^5.1.0",
-    "sass": "^1.57.1"
+    "sass": "^1.63.6"
   }
 }

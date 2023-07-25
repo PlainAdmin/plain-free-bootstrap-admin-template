@@ -1,16 +1,17 @@
 /* ========== header css ========== */
 
 .header {
-  padding: 30px 0;
+  padding: 22px 0;
   background: $white;
+  position: sticky;
+  top: 0;
+  z-index: 99;
 
   .header-left {
     .menu-toggle-btn {
       .main-btn {
-        padding: 0px 15px;
-        height: 46px;
-        line-height: 46px;
-        border-radius: 10px;
+        padding: 10px 16px;
+        border-radius: 8px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -26,9 +27,8 @@
           width: 100%;
           border: 1px solid $light;
           background: rgba($light, 0.5);
-          border-radius: 10px;
-          height: 46px;
-          padding-left: 44px;
+          border-radius: 8px;
+          padding: 10px 10px 10px 44px;
           @include transition(0.3s);
 
           &:focus {
@@ -45,6 +45,10 @@
           height: 46px;
           color: $gray;
           font-weight: 700;
+
+          i {
+            margin-top: 7px;
+          }
         }
       }
     }
@@ -55,13 +59,18 @@
     justify-content: flex-end;
 
     button {
-      border: 1px solid $light;
-      background: rgba($light, 0.5);
-      border-radius: 10px;
+      border: 1px solid #F6F6F6;
+      background: #F6F6F6;
+      border-radius: 50%;
       height: 46px;
       width: 46px;
       @include flex-center;
       position: relative;
+      color: $dark;
+
+      svg {
+        fill: currentColor;
+      }
 
       &::after {
         display: none;
@@ -69,16 +78,14 @@
 
       span {
         position: absolute;
-        width: 20px;
-        height: 20px;
-        background: $primary;
-        color: $white;
+        width: 12px;
+        height: 12px;
+        background: #FF737E;
+        border: 2px solid $white;
         border-radius: 50%;
         @include flex-center;
-        top: -8px;
-        right: -6px;
-        font-size: 12px;
-        font-weight: 500;
+        top: 0;
+        right: 0;
       }
     }
 
@@ -87,7 +94,7 @@
       border: 1px solid $light;
       padding: 10px 10px;
       @include transition(0.3s);
-      top: 24px !important;
+      top: 21px !important;
       right: 0;
       position: absolute;
       transform: translate3d(0px, 60px, 0px);
@@ -103,7 +110,7 @@
         &:hover {
           a {
             color: $primary;
-            background: rgba($primary, 0.05);
+            background: #f3f3f3;
           }
         }
         &:last-child {
@@ -187,7 +194,12 @@
       }
 
       .dropdown-menu {
-        width: 230px;
+        width: 10rem;
+        min-width: 190px;
+        border: none;
+        border-radius: 4px;
+        box-shadow: 0 0 #0000, 0 0 #0000, 0 0 16px rgb(0 0 0 / 10%);
+        padding: 8px;
 
         &.dropdown-menu-end {
           transform: translate3d(0px, 60px, 0px);
@@ -195,15 +207,82 @@
 
         li {
           border-bottom: none;
+          padding: 0;
 
           a {
             font-size: 14px;
             display: flex;
             align-items: center;
+            border-radius: 6px;
+            padding: 10px 8px;
+            color: rgba($dark, 0.5);
 
             i {
-              margin-right: 15px;
+              margin-right: 8px;
               font-weight: 700;
+            }
+
+            &:hover {
+              color: rgba($dark, 1);
+              background: #f3f3f3;
+            }
+          }
+
+          &.divider {
+            margin: 4px 0;
+            height: 1px;
+            display: block;
+            background: rgb(28 28 28 / 0.05);
+          }
+        }
+
+        .author-info {
+          display: flex;
+          align-items: center;
+          padding: 4px;
+          border-radius: 6px;
+          cursor: pointer;
+
+          .image {
+            flex: none;
+
+            img {
+              width: 28px;
+              height: 28px;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+          }
+
+          .content {
+            padding-left: 8px;
+
+            h4 {
+              font-size: 14px;
+              line-height: 1;
+              font-weight: 500;
+              @include transition(0.3s);
+            }
+
+            a {
+              font-size: 12px;
+              line-height: 1rem;
+              color: rgba($dark, 0.4);
+              padding: 0;
+              display: inline;
+              background-color: initial;
+
+              &:hover {
+                background: initial;
+              }
+            }
+          }
+
+          &:hover {
+            background: #f3f3f3;
+
+            a {
+              color: rgba($dark, 1);
             }
           }
         }
@@ -216,30 +295,22 @@
           align-items: center;
 
           .image {
-            border: 2px solid #f9f9f9;
-            @include box-shadow(0px 21px 25px rgba(218, 223, 227, 0.8));
+            border: 1px solid #DFE5EF;
             width: 46px;
             height: 46px;
             border-radius: 50%;
-            margin-left: 16px;
+            margin-right: 14px;
             position: relative;
-
-            .status {
-              width: 16px;
-              height: 16px;
-              border-radius: 50%;
-              border: 2px solid $light-2;
-              background: $success;
-              position: absolute;
-              bottom: 0;
-              right: 0;
-              top: auto;
-            }
 
             img {
               width: 100%;
               border-radius: 50%;
             }
+          }
+
+          p {
+            font-size: 12px;
+            text-align: left;
           }
         }
       }

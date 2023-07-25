@@ -6,12 +6,12 @@
   transition: all $time ease-out 0s;
 }
 
-@mixin transform($value) {
-  -webkit-transform: $value;
-  -moz-transform: $value;
-  -ms-transform: $value;
-  -o-transform: $value;
-  transform: $value;
+@mixin transform($values...) {
+  -webkit-transform: $values;
+  -moz-transform: $values;
+  -ms-transform: $values;
+  -o-transform: $values;
+  transform: $values;
 }
 
 @mixin user-select($value) {

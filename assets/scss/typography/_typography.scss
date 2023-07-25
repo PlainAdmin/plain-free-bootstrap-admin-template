@@ -72,7 +72,21 @@ h6,
   line-height: 22px;
 }
 
+.text-xs {
+  font-size: 12px;
+}
+
 /* ========== breadcrumb ============ */
+.title-wrapper {
+  .breadcrumb-wrapper,
+  .title {
+    margin-bottom: 30px;
+
+    @media #{$xs} {
+      margin-bottom: 10px;
+    }
+  }
+}
 .breadcrumb-wrapper {
   display: flex;
   justify-content: flex-end;

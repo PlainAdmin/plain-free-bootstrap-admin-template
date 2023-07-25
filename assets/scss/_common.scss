@@ -2,7 +2,7 @@
 		COMMON css
 ===========================*/
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -113,9 +113,8 @@ p {
   box-sizing: border-box;
   padding: 25px 30px;
   position: relative;
-  border: 1px solid #e2e8f0;
-  box-shadow: 0px 10px 20px rgba(200, 208, 216, 0.3);
-  border-radius: 10px;
+  box-shadow: 0px 12px 24px -4px rgba(145, 158, 171, 0.12), 0px 0px 2px 0px rgba(145, 158, 171, 0.20);
+  border-radius: 7px;
 
   @media #{$xs} {
     padding: 20px;
@@ -160,6 +159,56 @@ p {
       a {
         display: block;
         font-size: 14px;
+      }
+    }
+  }
+}
+
+.error-box {
+  max-width: 330px;
+  margin: 65px auto;
+
+  @media #{$xs} {
+    margin: 25px auto;
+
+    img {
+      max-width: 180px;
+    }
+
+    h1 {
+      font-size: 28px;
+    }
+  }
+
+  a {
+    border-radius: 7px;
+    padding: 7px 25px;
+  }
+}
+
+.max-w-350 {
+  max-width: 350px;
+}
+
+.more-btn-wrapper {
+  .dropdown-menu {
+    border: 0.5px solid #efefef;
+    box-shadow: 0px 5px 10px rgba(26, 25, 85, 0.08);
+    border-radius: 5px;
+
+    .dropdown-item {
+      &:active,
+      &:focus {
+        background: none;
+      }
+
+      a {
+        width: 100%;
+        border-radius: 4px;
+        color: $dark;
+      }
+      i {
+        font-weight: 700;
       }
     }
   }

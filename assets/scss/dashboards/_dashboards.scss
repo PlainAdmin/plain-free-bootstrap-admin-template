@@ -39,6 +39,40 @@
       }
     }
   }
+
+  h2 {
+    @media #{$xs} {
+      font-size: 22px;
+    }
+  }
+}
+
+.legend-marketing {
+  .icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 5px;
+    background: #ECF2FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+  }
+
+  .bg-color {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 12px;
+    margin-top: 8px;
+  }
+
+  .text {
+    h5 {
+      font-size: 18px;
+      margin-top: 5px;
+    }
+  }
 }
 
 .todo-list-wrapper {
@@ -93,5 +127,143 @@
         }
       }
     }
+  }
+}
+
+.cards-title {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.external-link {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  .link-item {
+    padding: 10px 15px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:hover {
+      background: rgba(223, 229, 239, 0.20);
+    }
+  }
+
+  .link-name {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    color: $dark;
+  }
+}
+
+.card-top-chanels {
+  .top-chanels-item {
+    display: grid;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    padding: 11px 0;
+
+    @media #{$lg, $md, $xs} {
+      grid-template-columns: repeat(3,minmax(0,1fr));
+    }
+  }
+}
+
+.featured-tab {
+  .nav {
+    gap: 12px;
+
+    button {
+      background: transparent;
+      border: none;
+      font-weight: 500;
+      font-size: 14px;
+      color: #64748B;
+      padding: 8px 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      &:hover,
+      &.active {
+        color: $dark;
+        background: rgba(223, 229, 239, 0.30);
+      }
+    }
+  }
+
+  .status-badge {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 30px;
+
+    &.queue {
+      background: rgba(240, 149, 12, 0.08);
+      color: #F0950C;
+    }
+    &.sent {
+      background: rgba(16, 185, 129, 0.08);
+      color: #10B981;
+    }
+  }
+
+  .tab-item-title {
+    &:hover {
+      color: $primary;
+      cursor: pointer;
+    }
+  }
+
+}
+
+.card-click-rate {
+  .device-list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+
+      span {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+      }
+
+      &:nth-child(1n) {
+        span {
+          background: $primary;
+        }
+      }
+
+      &:nth-child(2n) {
+        span {
+          background: #ECF2FF;
+        }
+      }
+
+      &:nth-child(3n) {
+        span {
+          background: #F9F9FD;
+        }
+      }
+    }
+  }
+
+  .apexcharts-tooltip-series-group {
+    padding-top: 4px;
+  }
+
+  .apexcharts-tooltip-z-group,
+  .apexcharts-tooltip-goals-group {
+    display: none;
   }
 }

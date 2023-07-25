@@ -24,6 +24,10 @@
     resize: none;
     transition: all 0.3s;
 
+    @media #{$xs} {
+      font-size: 14px;
+    }
+
     &:focus {
       border-color: $primary;
       background: $white;
@@ -32,6 +36,19 @@
     &[type="date"],
     &[type="time"] {
       background: transparent;
+    }
+
+    &.light-bg {
+      &[type="date"],
+      &[type="time"] {
+        background: rgba($light, 0.5);
+      }
+    }
+    &.light-bg {
+      &[type="date"]:focus,
+      &[type="time"]:focus {
+        background: $white;
+      }
     }
   }
 }
@@ -373,14 +390,20 @@
 //* ===== checkbox style  */
 .checkbox-style {
   padding-left: 40px;
-  min-height: 28px;
+  min-height: 22px;
 
   .form-check-input {
-    width: 28px;
-    height: 28px;
+    width: 22px;
+    height: 22px;
     border-radius: 4px;
     margin-left: -40px;
     cursor: pointer;
+    margin-top: 6px;
+
+    &:checked {
+        background-color: $primary;
+        border-color: $primary;
+      }
 
     &:disabled {
       cursor: auto;
@@ -424,14 +447,15 @@
 //* ===== radio style  */
 .radio-style {
   padding-left: 40px;
-  min-height: 28px;
+  min-height: 22px;
 
   .form-check-input {
-    width: 28px;
-    height: 28px;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
     margin-left: -40px;
     cursor: pointer;
+    margin-top: 7px;
 
     &:disabled {
       cursor: auto;

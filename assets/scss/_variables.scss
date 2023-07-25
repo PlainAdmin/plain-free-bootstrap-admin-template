@@ -1,5 +1,5 @@
 // Font Family
-$font: "Inter", sans-serif;
+$font: "Plus Jakarta Sans", sans-serif;
 
 // ======== white colors variants
 $white: #fff;
@@ -26,25 +26,34 @@ $black-20: rgba($black, 0.2);
 $black-10: rgba($black, 0.1);
 
 // ======== dark color
-$dark: #262d3f;
+$dark: #1A2142;
 $dark-2: #2f3546;
 $dark-3: #090e34;
+$dark-4: #262d3f;
 
 // ======== gray color
 $gray: #5d657b;
 $gray-2: #c2cbd6;
+$gray-3: #8F9AAD;
+
+// ======== Sidebar color
+$sidebar-text: #9AA4CA;
 
 // ======== primary color
-$primary: #4a6cf7;
+$primary: #365CF5;
 
 // ======== secondary color
 $secondary: #00c1f8;
 
 // ======== success color
 $success: #219653;
+$success-2: #10B981;
+$success-light: #42d29d;
 
 // ======== danger color
 $danger: #d50100;
+$danger-2: #FB5454;
+$danger-light: #fa5a78;
 
 // ======== warning color
 $warning: #f7c800;
@@ -58,21 +67,30 @@ $purple: #9b51e0;
 // ======== light color
 $light: #efefef;
 $light-2: #e5e5e5;
+$light-3: #DFE5EF;
 
 // ======== active color
-$active: #4a6cf7;
+$active: #365CF5;
 
 // ======== deactive color
-$deactive: #cbe1ff;
+$deactive: #E9E9E9;
 
 // ======== orange color
 $orange: #f2994a;
 
 // ======== deep-blue color
 $deep-blue: #345d9d;
+$blue-light: #49BEFF;
+
+// ========
+$doc: #f98db4;
+
+// ========
+$photo: #93cfe2;
 
 // ======== Shadow
 $shadow-one: 0px 5px 20px rgba(0, 0, 0, 0.1);
+$shadow-three: 0px 12px 24px -4px rgba(145, 158, 171, 0.12), 0px 0px 2px 0px rgba(145, 158, 171, 0.20);
 
 // ======== Responsive Variables
 $desktop: "only screen and (min-width: 1400px)";

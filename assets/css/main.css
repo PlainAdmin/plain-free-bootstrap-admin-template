@@ -3678,6 +3678,9 @@ h6,
   height: 1px;
   background: #E9EEF1;
 }
+.sidebar-nav-wrapper .sidebar-nav ul.collapsing {
+  transition: none;
+}
 .sidebar-nav-wrapper .sidebar-nav ul .nav-item {
   position: relative;
 }

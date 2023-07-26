@@ -44,6 +44,10 @@
     }
 
     ul {
+      &.collapsing {
+        transition: none;
+      }
+      
       .nav-item {
         position: relative;
 

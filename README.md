@@ -39,6 +39,18 @@ If you are looking for a high-quality free admin template that comes with all es
 - [Credits](https://plainadmin.com/docs/#credits)
 
 ### Update Logs - 1.2 :
+- Rebranded the entire template.
+- Updated the style guide
+- The sidebar menu icons have been updated.
+- The overall design of the sidebar has been enhanced.
+- The header menu icons have been updated.
+- The design of the header dropdown has been updated.
+- Additional buttons have been added to the Button Page.
+- Updated essential dependencies
+- The charts code has been adjusted to accommodate the updated version.
+- UX and UI enhancements
+
+### Update Logs - 1.2 :
 - Added Kanban (App) [PRO]
 - Added File Manager (App) [PRO]
 - Dependencies updated

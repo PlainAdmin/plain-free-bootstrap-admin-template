@@ -38,7 +38,7 @@ If you are looking for a high-quality free admin template that comes with all es
 - [Tables](https://plainadmin.com/docs/#tables)
 - [Credits](https://plainadmin.com/docs/#credits)
 
-### Update Logs - 1.2 :
+### Update Logs - 2.0 :
 - Rebranded the entire template.
 - Updated the style guide
 - The sidebar menu icons have been updated.

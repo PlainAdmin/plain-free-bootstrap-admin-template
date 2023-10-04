@@ -1,4 +1,4 @@
-# PlainAdmin - Free Vanilla JS Bootstrap 5 Admin Dashboard Template! Here we go
+# PlainAdmin - Free Vanilla JS Bootstrap 5 Admin Dashboard Template! Here we go, again and again and again
 
 PlainAdmin is a free and open-source **Vanilla JS admin dashboard template** based on Bootstrap 5 that comes with 5 unique dashboard variations, 300+ essential dashboard components, pages, UI elements, charts, graphs, application UI pages, and more. to provide everything you need to build a data-rich backend or admin panel for almost any sort of web app.
 
